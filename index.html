@@ -452,7 +452,7 @@
         
         <!-- Decoration Background Blobs -->
         <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob pointer-events-none dark:bg-purple-600/10"></div>
-        <div class="absolute top-40 right-10 w-72 h-72 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000 pointer-events-none dark:bg-blue-600/10"></div>
+        <div class="absolute top-40 right-10 w-72 h-72 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob [animation-delay:2s] pointer-events-none dark:bg-blue-600/10"></div>
 
         <!-- HERO SECTION -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative">
@@ -1016,7 +1016,7 @@
                     }
                     if (mobileStatus) {
                         mobileStatus.innerHTML = DOMPurify.sanitize(openHtml);
-                        mobileStatus.className = "flex items-center gap-2 text-[11px] font-bold text-green-600 dark:text-green-400 uppercase tracking-widest";
+                        mobileStatus.className = "mt-0.5 flex items-center gap-2 text-[11px] font-bold text-green-600 dark:text-green-400 uppercase tracking-widest";
                     }
                 } else {
                     if (desktopStatus) {
@@ -1025,7 +1025,7 @@
                     }
                     if (mobileStatus) {
                         mobileStatus.innerHTML = DOMPurify.sanitize(closedHtml);
-                        mobileStatus.className = "flex items-center gap-2 text-[11px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest";
+                        mobileStatus.className = "mt-0.5 flex items-center gap-2 text-[11px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest";
                     }
                 }
             }
@@ -1043,7 +1043,10 @@
                 isDrawerOpen = !isDrawerOpen;
                 mobileMenuBtn.setAttribute('aria-expanded', isDrawerOpen);
                 
+                const icon = document.getElementById('mobileMenuIcon');
+                
                 if (isDrawerOpen) {
+                    if (icon) icon.classList.replace('ph-list', 'ph-x');
                     mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
                     mobileMenuOverlay.classList.add('opacity-100', 'pointer-events-auto');
                     
@@ -1052,6 +1055,7 @@
                     
                     document.body.style.overflow = 'hidden'; // Ngăn cuộn trang phía sau
                 } else {
+                    if (icon) icon.classList.replace('ph-x', 'ph-list');
                     mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
                     mobileMenuOverlay.classList.remove('opacity-100', 'pointer-events-auto');
                     
@@ -1099,7 +1103,7 @@
                 calculatePrice();
                 
                 const btn = document.getElementById('submitBtn');
-                const originalText = 'Xác Nhận Đặt Ngay <i class="ph-bold ph-arrow-right"></i>'; 
+                const originalText = btn.innerHTML; 
                 
                 btn.innerHTML = DOMPurify.sanitize('<i class="ph-bold ph-spinner animate-spin text-xl inline-block align-middle"></i> Đang xử lý...');
                 btn.classList.add('opacity-80', 'cursor-not-allowed');
