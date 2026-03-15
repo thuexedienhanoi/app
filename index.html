@@ -158,26 +158,51 @@
                </div>
 
                <!-- Logo -->
-               <div class="flex flex-shrink-0 items-center gap-2 sm:gap-3 relative z-50 cursor-pointer" onclick="window.location.href='#'">
+               <div class="flex flex-shrink-0 items-center gap-2 sm:gap-3 relative z-50 cursor-pointer" onclick="window.location.href='trangchu.html'">
                    <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full shadow-lg object-cover bg-white">
                    <span class="font-bold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-fb-primary to-purple-600 dark:to-purple-400">Nguyễn Công</span>
                </div>
 
-               <!-- Desktop Menu (Tối ưu icons) -->
-               <nav class="hidden lg:flex space-x-1 xl:space-x-2">
-                   <a href="#" class="px-3 py-2 rounded-xl bg-black/5 dark:bg-white/10 font-semibold text-fb-primary flex items-center gap-1.5 transition-colors">
+               <!-- Desktop Menu -->
+               <nav class="hidden lg:flex space-x-1 items-center">
+                   <a href="trangchu.html" class="px-2 py-2 xl:px-3 rounded-xl bg-black/5 dark:bg-white/10 font-semibold text-fb-primary flex items-center gap-1.5 transition-colors text-sm xl:text-base">
                        <i class="ph-fill ph-house text-lg"></i> Trang chủ
                    </a>
-                   <a href="/bang-gia" class="px-3 py-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white">
-                       <i class="ph-fill ph-money text-lg"></i> Bảng giá
+                   <a href="gioithieu.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
+                       <i class="ph-fill ph-info text-lg"></i> Giới thiệu
                    </a>
-                   <a href="/cac-loai-xe" class="px-3 py-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white">
-                       <i class="ph-fill ph-scooter text-lg"></i> Loại xe
+                   
+                   <!-- Dropdown Dịch vụ -->
+                   <div class="relative group">
+                       <button class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
+                           <i class="ph-fill ph-scooter text-lg"></i> Dịch vụ <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
+                       </button>
+                       <!-- Dropdown Menu -->
+                       <div class="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 bg-white dark:bg-[#242526] rounded-xl shadow-xl border border-black/5 dark:border-white/10 z-50 overflow-hidden">
+                           <div class="py-1">
+                               <!-- Rút gọn nhãn menu -->
+                               <a href="longbien.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Long Biên</a>
+                               <a href="gialam.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Gia Lâm</a>
+                               <a href="hoankiem.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Hoàn Kiếm</a>
+                               <a href="phoco.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Phố Cổ</a>
+                               <a href="badinh.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Ba Đình</a>
+                               <a href="tayho.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Tây Hồ</a>
+                               <a href="banggia.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Bảng giá</a>
+                               <a href="thutuc.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-bold transition-colors text-fb-primary border-t border-black/5 dark:border-white/10">Thủ tục</a>
+                           </div>
+                       </div>
+                   </div>
+
+                   <a href="hoidap.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
+                       <i class="ph-fill ph-question text-lg"></i> FAQ
                    </a>
-                   <a href="/thu-tuc" class="px-3 py-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white">
-                       <i class="ph-fill ph-clipboard-text text-lg"></i> Thủ tục
+                   <a href="chinhsach.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
+                       <i class="ph-fill ph-shield-check text-lg"></i> Chính sách
                    </a>
-                   <a href="/lien-he" class="px-3 py-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white">
+                   <a href="baomat.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
+                       <i class="ph-fill ph-lock-key text-lg"></i> Bảo mật
+                   </a>
+                   <a href="lienhe.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
                        <i class="ph-fill ph-address-book text-lg"></i> Liên hệ
                    </a>
                </nav>
@@ -189,7 +214,7 @@
                        <i class="ph ph-sun text-xl hidden dark:block"></i>
                    </button>
                    
-                   <!-- Auto Store Status Badge (Thay thế nút gọi cũ) -->
+                   <!-- Auto Store Status Badge -->
                    <div id="desktopStoreStatus" class="hidden sm:flex items-center gap-2 bg-gray-50 dark:bg-white/5 text-gray-500 border border-black/10 px-4 py-2 rounded-full font-semibold text-sm transition-all cursor-default shadow-sm">
                        <!-- JS sẽ tự động inject nội dung vào đây -->
                    </div>
@@ -200,16 +225,18 @@
        <!-- APPLE ULTRA MOBILE MENU OVERLAY -->
        <div id="mobileMenu" class="fixed inset-0 z-40 bg-white/85 dark:bg-[#050505]/85 backdrop-blur-3xl opacity-0 pointer-events-none transition-opacity duration-500 flex flex-col pt-24 pb-10 px-6 overflow-y-auto">
            
-           <!-- Trạng thái mở/đóng cửa (Đã chuyển lên trên) -->
+           <!-- Trạng thái mở/đóng cửa -->
            <div class="mobile-menu-item opacity-0 translate-y-8 transition-all duration-700 apple-easing bg-black/5 dark:bg-white/5 rounded-2xl p-4 mb-6 flex items-center justify-center border border-black/5 dark:border-white/10 shadow-sm">
                <div id="mobileStoreStatus">
                     <!-- JS tự động inject -->
                </div>
            </div>
 
-           <!-- Danh sách Links (Có tích hợp Icons chuyên nghiệp) -->
+           <!-- Danh sách Links -->
            <nav class="flex flex-col space-y-4">
-               <a href="#" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText border-b border-black/5 dark:border-white/5 pb-4">
+               
+               <!-- Trang chủ -->
+               <a href="trangchu.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-fb-primary/10 flex items-center justify-center text-fb-primary">
                            <i class="ph-fill ph-house text-2xl"></i>
@@ -218,38 +245,78 @@
                    </div>
                    <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
                </a>
-               
-               <a href="/bang-gia" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
+
+               <!-- Giới thiệu -->
+               <a href="gioithieu.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
-                           <i class="ph-fill ph-money text-2xl"></i>
+                           <i class="ph-fill ph-info text-2xl"></i>
                        </div>
-                       <span>Bảng giá</span>
+                       <span>Giới thiệu</span>
                    </div>
                    <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
                </a>
                
-               <a href="/cac-loai-xe" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
+               <!-- Dropdown Dịch vụ (Mobile) -->
+               <div class="mobile-menu-item opacity-0 translate-y-8 transition-all duration-700 apple-easing border-b border-black/5 dark:border-white/5 pb-4">
+                   <button onclick="document.getElementById('mobileServices').classList.toggle('hidden'); document.getElementById('mobileServicesIcon').classList.toggle('rotate-180');" class="w-full flex justify-between items-center group focus:outline-none">
+                       <div class="flex items-center gap-4">
+                           <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
+                               <i class="ph-fill ph-scooter text-2xl"></i>
+                           </div>
+                           <span class="text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText group-hover:text-fb-primary transition-colors">Dịch vụ</span>
+                       </div>
+                       <i id="mobileServicesIcon" class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300"></i>
+                   </button>
+                   
+                   <!-- Menu con Dịch vụ -->
+                   <div id="mobileServices" class="hidden flex-col pl-[60px] pt-4 space-y-4">
+                       <a href="longbien.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Long Biên</a>
+                       <a href="gialam.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Gia Lâm</a>
+                       <a href="hoankiem.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Hoàn Kiếm</a>
+                       <a href="phoco.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Phố Cổ</a>
+                       <a href="badinh.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Ba Đình</a>
+                       <a href="tayho.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Tây Hồ</a>
+                       <a href="banggia.html" class="block text-lg font-semibold text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary transition-colors">Bảng giá</a>
+                       <a href="thutuc.html" class="block text-lg font-semibold text-fb-primary dark:text-fb-primary transition-colors mt-2 pt-2 border-t border-black/5 dark:border-white/10">Thủ tục</a>
+                   </div>
+               </div>
+               
+               <!-- FAQ -->
+               <a href="hoidap.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
-                           <i class="ph-fill ph-scooter text-2xl"></i>
+                           <i class="ph-fill ph-question text-2xl"></i>
                        </div>
-                       <span>Loại xe</span>
+                       <span>FAQ</span>
                    </div>
                    <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
                </a>
                
-               <a href="/thu-tuc" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
+               <!-- Chính sách -->
+               <a href="chinhsach.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
-                           <i class="ph-fill ph-clipboard-text text-2xl"></i>
+                           <i class="ph-fill ph-shield-check text-2xl"></i>
                        </div>
-                       <span>Thủ tục</span>
+                       <span>Chính sách</span>
                    </div>
                    <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
                </a>
-               
-               <a href="/lien-he" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
+
+               <!-- Bảo mật -->
+               <a href="baomat.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
+                   <div class="flex items-center gap-4">
+                       <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
+                           <i class="ph-fill ph-lock-key text-2xl"></i>
+                       </div>
+                       <span>Bảo mật</span>
+                   </div>
+                   <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
+               </a>
+
+               <!-- Liên hệ -->
+               <a href="lienhe.html" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText hover:text-fb-primary dark:hover:text-fb-primary border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
                            <i class="ph-fill ph-address-book text-2xl"></i>
@@ -396,13 +463,183 @@
            </div>
        </section>
 
-       <!-- SEO Content Section -->
+       <!-- SECTION: GIỚI THIỆU -->
+       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+           <div class="glass rounded-3xl p-6 sm:p-10 shadow-sm border border-white/50 dark:border-white/5 flex flex-col md:flex-row gap-10 items-center relative overflow-hidden">
+               <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl"></div>
+               <div class="w-full md:w-1/2 relative z-10">
+                   <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Giới thiệu Nguyễn Công" class="rounded-3xl shadow-xl w-full object-cover max-h-[400px]">
+               </div>
+               <div class="w-full md:w-1/2 space-y-5 relative z-10">
+                   <div class="inline-block px-4 py-1.5 rounded-full bg-fb-primary/10 text-fb-primary font-bold text-sm mb-2">Về Chúng Tôi</div>
+                   <h2 class="text-3xl md:text-4xl font-bold text-fb-text dark:text-fb-darkText">Người bạn đồng hành tin cậy trên mọi nẻo đường Hà Nội</h2>
+                   <p class="text-fb-muted dark:text-fb-darkMuted text-lg leading-relaxed">
+                       Với hơn 5 năm kinh nghiệm, <strong>Nguyễn Công</strong> tự hào là hệ thống cung cấp dịch vụ cho thuê xe điện, xe máy giá rẻ và uy tín bậc nhất Thủ Đô. Chúng tôi không ngừng nâng cấp dàn xe và cải thiện chất lượng dịch vụ nhằm mang lại sự an toàn tuyệt đối, linh hoạt và sự tiện nghi cho chuyến đi của bạn.
+                   </p>
+                   <ul class="space-y-3 mt-4">
+                       <li class="flex items-center gap-3 text-fb-text dark:text-fb-darkText font-medium text-lg"><i class="ph-fill ph-check-circle text-green-500 text-2xl"></i> Cung cấp hơn 500+ đầu xe đời mới, thường xuyên bảo dưỡng.</li>
+                       <li class="flex items-center gap-3 text-fb-text dark:text-fb-darkText font-medium text-lg"><i class="ph-fill ph-check-circle text-green-500 text-2xl"></i> Dịch vụ giao nhận xe tận nơi nhanh chóng, siêu tốc 15 phút.</li>
+                       <li class="flex items-center gap-3 text-fb-text dark:text-fb-darkText font-medium text-lg"><i class="ph-fill ph-check-circle text-green-500 text-2xl"></i> Đội ngũ cứu hộ luôn sẵn sàng hỗ trợ 24/7.</li>
+                   </ul>
+               </div>
+           </div>
+       </section>
+
+       <!-- SECTION: ĐÁNH GIÁ (5 REVIEWS) -->
+       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+           <div class="text-center mb-12">
+               <h2 class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-fb-primary to-purple-500 inline-block mb-4">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+               <p class="text-fb-muted dark:text-fb-darkMuted text-lg max-w-2xl mx-auto">Hơn 10.000+ du khách đã tin tưởng và có những trải nghiệm tuyệt vời cùng dịch vụ thuê xe Nguyễn Công.</p>
+           </div>
+           
+           <!-- Grid 5 Reviews (3 trên, 2 dưới căn giữa) -->
+           <div class="flex flex-wrap justify-center gap-6">
+               
+               <!-- Review 1 -->
+               <div class="glass w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-6 rounded-2xl shadow-sm border border-white/50 dark:border-white/5 hover:-translate-y-1.5 transition-transform duration-300">
+                   <div class="flex items-center gap-4 mb-4">
+                       <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center text-xl font-bold text-fb-primary">H</div>
+                       <div>
+                           <h4 class="font-bold text-fb-text dark:text-fb-darkText">Hoàng Minh Anh</h4>
+                           <div class="flex text-yellow-400 text-sm mt-0.5">
+                               <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="text-fb-muted dark:text-fb-darkMuted line-clamp-4">"Thuê xe điện Vinfast ở đây chạy rất êm, cốp xe cực kì rộng thoải mái để đồ. Bạn chủ shop tư vấn nhiệt tình, giao xe tận nơi ở khách sạn phố cổ siêu nhanh. Rất đáng tiền!"</p>
+               </div>
+
+               <!-- Review 2 -->
+               <div class="glass w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-6 rounded-2xl shadow-sm border border-white/50 dark:border-white/5 hover:-translate-y-1.5 transition-transform duration-300">
+                   <div class="flex items-center gap-4 mb-4">
+                       <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900/50 rounded-full flex items-center justify-center text-xl font-bold text-purple-600 dark:text-purple-400">L</div>
+                       <div>
+                           <h4 class="font-bold text-fb-text dark:text-fb-darkText">Lê Thảo Nhi</h4>
+                           <div class="flex text-yellow-400 text-sm mt-0.5">
+                               <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="text-fb-muted dark:text-fb-darkMuted line-clamp-4">"Mình đi du lịch một mình, thuê con Vision chạy lòng vòng Hà Nội. Xe mới cứng, phanh ăn, đèn sáng, còn được tặng sẵn 2 áo mưa và xăng. Thủ tục siêu tốc 5 phút là xong."</p>
+               </div>
+
+               <!-- Review 3 -->
+               <div class="glass w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-6 rounded-2xl shadow-sm border border-white/50 dark:border-white/5 hover:-translate-y-1.5 transition-transform duration-300">
+                   <div class="flex items-center gap-4 mb-4">
+                       <div class="w-12 h-12 bg-green-100 dark:bg-green-900/50 rounded-full flex items-center justify-center text-xl font-bold text-green-600 dark:text-green-400">T</div>
+                       <div>
+                           <h4 class="font-bold text-fb-text dark:text-fb-darkText">Trần Văn Tùng</h4>
+                           <div class="flex text-yellow-400 text-sm mt-0.5">
+                               <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="text-fb-muted dark:text-fb-darkMuted line-clamp-4">"Tuyệt vời! Giá thuê xe số chỉ 100k/ngày rẻ nhất khu Long Biên. Lần trước đi bị thủng xăm giữa đường gọi hotline có anh kỹ thuật chạy ra tận nơi vá miễn phí. Điểm 10 chất lượng."</p>
+               </div>
+
+               <!-- Review 4 -->
+               <div class="glass w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-6 rounded-2xl shadow-sm border border-white/50 dark:border-white/5 hover:-translate-y-1.5 transition-transform duration-300">
+                   <div class="flex items-center gap-4 mb-4">
+                       <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/50 rounded-full flex items-center justify-center text-xl font-bold text-orange-600 dark:text-orange-400">P</div>
+                       <div>
+                           <h4 class="font-bold text-fb-text dark:text-fb-darkText">Phạm Quỳnh Chi</h4>
+                           <div class="flex text-yellow-400 text-sm mt-0.5">
+                               <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="text-fb-muted dark:text-fb-darkMuted line-clamp-4">"Dịch vụ cực chuyên nghiệp. Mình thuê nguyên tháng chiếc Feliz S để đi làm ở Tây Hồ. Shop bảo dưỡng định kỳ tận nhà, xe không hề hỏng vặt. Đỡ được bao nhiêu tiền xăng cộ mỗi tháng."</p>
+               </div>
+
+               <!-- Review 5 -->
+               <div class="glass w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] p-6 rounded-2xl shadow-sm border border-white/50 dark:border-white/5 hover:-translate-y-1.5 transition-transform duration-300">
+                   <div class="flex items-center gap-4 mb-4">
+                       <div class="w-12 h-12 bg-red-100 dark:bg-red-900/50 rounded-full flex items-center justify-center text-xl font-bold text-red-600 dark:text-red-400">N</div>
+                       <div>
+                           <h4 class="font-bold text-fb-text dark:text-fb-darkText">Nguyễn Hoàng Sơn</h4>
+                           <div class="flex text-yellow-400 text-sm mt-0.5">
+                               <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <p class="text-fb-muted dark:text-fb-darkMuted line-clamp-4">"Tôi đáp sân bay Nội Bài lúc sáng sớm, alo phát có nhân viên đứng chờ giao xe luôn. Thủ tục ko cần cọc tiền với khách du lịch nên rất an tâm. Sẽ giới thiệu cho bạn bè."</p>
+               </div>
+
+           </div>
+       </section>
+
+       <!-- SECTION: FAQ (5 CÂU HỎI & TRẢ LỜI) -->
+       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+           <div class="text-center mb-10">
+               <h2 class="text-3xl md:text-4xl font-bold text-fb-text dark:text-fb-darkText mb-4">Câu Hỏi Thường Gặp (FAQ)</h2>
+               <p class="text-fb-muted dark:text-fb-darkMuted text-lg">Giải đáp nhanh những thắc mắc phổ biến nhất của khách hàng khi thuê xe.</p>
+           </div>
+           
+           <div class="space-y-4">
+               <!-- FAQ 1 -->
+               <details class="glass group rounded-2xl border border-white/50 dark:border-white/5 overflow-hidden [&_summary::-webkit-details-marker]:hidden bg-white/40 dark:bg-black/20">
+                   <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-fb-text dark:text-fb-darkText text-lg hover:text-fb-primary transition-colors">
+                       1. Thủ tục thuê xe cần chuẩn bị những giấy tờ gì?
+                       <i class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300 group-open:rotate-180"></i>
+                   </summary>
+                   <div class="p-5 pt-0 text-fb-muted dark:text-fb-darkMuted border-t border-black/5 dark:border-white/5 mt-2 leading-relaxed text-base">
+                       Thủ tục cực kỳ đơn giản. Nếu bạn là khách du lịch, chỉ cần để lại Căn cước công dân (CCCD) gắn chip bản gốc hoặc Hộ chiếu (Passport) kèm vé máy bay/thông tin khách sạn lưu trú (sẽ được MIỄN CỌC). Nếu là sinh viên, người đi làm tại Hà Nội, bạn cần chuẩn bị CCCD và Bằng lái xe máy.
+                   </div>
+               </details>
+
+               <!-- FAQ 2 -->
+               <details class="glass group rounded-2xl border border-white/50 dark:border-white/5 overflow-hidden [&_summary::-webkit-details-marker]:hidden bg-white/40 dark:bg-black/20">
+                   <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-fb-text dark:text-fb-darkText text-lg hover:text-fb-primary transition-colors">
+                       2. Giá thuê xe máy, xe điện được tính như thế nào?
+                       <i class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300 group-open:rotate-180"></i>
+                   </summary>
+                   <div class="p-5 pt-0 text-fb-muted dark:text-fb-darkMuted border-t border-black/5 dark:border-white/5 mt-2 leading-relaxed text-base">
+                       Giá thuê xe được tính chu kì 24 tiếng (VD: Thuê 9h sáng hôm nay đến 9h sáng hôm sau tính 1 ngày). Nếu bạn trả xe quá giờ, chúng tôi sẽ linh động phụ thu theo giờ (thường là 15.000đ - 20.000đ/giờ) thay vì tính cả ngày mới.
+                   </div>
+               </details>
+
+               <!-- FAQ 3 -->
+               <details class="glass group rounded-2xl border border-white/50 dark:border-white/5 overflow-hidden [&_summary::-webkit-details-marker]:hidden bg-white/40 dark:bg-black/20">
+                   <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-fb-text dark:text-fb-darkText text-lg hover:text-fb-primary transition-colors">
+                       3. Có dịch vụ giao xe tận nơi không? Phí giao xe là bao nhiêu?
+                       <i class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300 group-open:rotate-180"></i>
+                   </summary>
+                   <div class="p-5 pt-0 text-fb-muted dark:text-fb-darkMuted border-t border-black/5 dark:border-white/5 mt-2 leading-relaxed text-base">
+                       Có! Chúng tôi MIỄN PHÍ giao và nhận xe tận nơi tại các khách sạn, bến xe, ga tàu trong bán kính 5km tính từ cửa hàng. Nếu bạn ở xa hơn (như Sân bay Nội Bài), cửa hàng sẽ thu một mức phụ phí nhỏ để hỗ trợ xăng xe cho nhân viên giao nhận.
+                   </div>
+               </details>
+
+               <!-- FAQ 4 -->
+               <details class="glass group rounded-2xl border border-white/50 dark:border-white/5 overflow-hidden [&_summary::-webkit-details-marker]:hidden bg-white/40 dark:bg-black/20">
+                   <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-fb-text dark:text-fb-darkText text-lg hover:text-fb-primary transition-colors">
+                       4. Tôi đang đi trên đường mà xe bị hỏng thì phải làm sao?
+                       <i class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300 group-open:rotate-180"></i>
+                   </summary>
+                   <div class="p-5 pt-0 text-fb-muted dark:text-fb-darkMuted border-t border-black/5 dark:border-white/5 mt-2 leading-relaxed text-base">
+                       Đừng lo lắng! Nguyễn Công có đội ngũ cứu hộ hoạt động 24/7. Bạn chỉ cần gọi Hotline <a href="tel:0816659199" class="text-fb-primary font-bold">0816 659 199</a>. Kỹ thuật viên sẽ có mặt ngay lập tức để khắc phục sự cố hoặc đổi cho bạn một chiếc xe khác tương đương để không làm gián đoạn lịch trình của bạn.
+                   </div>
+               </details>
+
+               <!-- FAQ 5 -->
+               <details class="glass group rounded-2xl border border-white/50 dark:border-white/5 overflow-hidden [&_summary::-webkit-details-marker]:hidden bg-white/40 dark:bg-black/20">
+                   <summary class="flex items-center justify-between p-5 cursor-pointer font-semibold text-fb-text dark:text-fb-darkText text-lg hover:text-fb-primary transition-colors">
+                       5. Thuê xe có được kèm sẵn phụ kiện (mũ, áo mưa, xăng) không?
+                       <i class="ph ph-caret-down text-xl text-fb-muted transition-transform duration-300 group-open:rotate-180"></i>
+                   </summary>
+                   <div class="p-5 pt-0 text-fb-muted dark:text-fb-darkMuted border-t border-black/5 dark:border-white/5 mt-2 leading-relaxed text-base">
+                       Khi giao xe, mỗi xe luôn được trang bị sẵn: 2 Mũ bảo hiểm (đã xịt khuẩn sạch sẽ), 2 Áo mưa tiện lợi dự phòng. Đối với xe máy xăng, trong bình có sẵn 1 lít xăng đủ đi đến trạm xăng gần nhất. Đối với xe điện, xe luôn được sạc đầy 100% pin và kèm theo sạc chính hãng.
+                   </div>
+               </details>
+           </div>
+       </section>
+
+       <!-- SEO Content Section (Phần bài viết sẵn có) -->
        <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
            
            <!-- Section 1 -->
            <div class="glass rounded-3xl p-6 sm:p-10 shadow-sm border border-white/50 dark:border-white/5 relative overflow-hidden">
                <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-               <h2 class="text-3xl font-bold mb-6 relative z-10 text-fb-text dark:text-fb-darkText">1. Vì sao nên chọn Dịch vụ cho thuê xe điện, xe máy giá rẻ Hà Nội - Nguyễn Công?</h2>
+               <h2 class="text-3xl font-bold mb-6 relative z-10 text-fb-text dark:text-fb-darkText">Vì sao nên chọn Dịch vụ cho thuê xe điện, xe máy giá rẻ Hà Nội - Nguyễn Công?</h2>
                <div class="prose dark:prose-invert max-w-none space-y-4 text-fb-muted dark:text-fb-darkMuted leading-relaxed relative z-10 text-base md:text-lg">
                    <p>Hà Nội không chỉ nổi tiếng với 36 phố phường cổ kính mà còn là điểm đến sầm uất với nhịp sống hối hả. Đặc thù giao thông tại thủ đô thường có nhiều con ngõ nhỏ và mật độ xe cộ đông đúc vào giờ cao điểm. Chính vì vậy, để có thể chủ động thời gian và thoải mái len lỏi khám phá mọi ngóc ngách, việc tìm kiếm một địa chỉ <strong>cho thuê xe điện Hà Nội</strong> hoặc <strong>cho thuê xe máy</strong> uy tín là ưu tiên hàng đầu của khách du lịch, người đi công tác, hay cả các bạn sinh viên xa nhà.</p>
                    
@@ -420,7 +657,7 @@
 
            <!-- Section 2 -->
            <div class="glass rounded-3xl p-6 sm:p-10 shadow-sm border border-white/50 dark:border-white/5">
-               <h2 class="text-3xl font-bold mb-6 text-fb-text dark:text-fb-darkText">2. Bảng giá cho thuê xe điện Hà Nội và xe máy chi tiết (Cập nhật 2026)</h2>
+               <h2 class="text-3xl font-bold mb-6 text-fb-text dark:text-fb-darkText">Bảng giá cho thuê xe điện Hà Nội và xe máy chi tiết (Cập nhật 2026)</h2>
                <div class="prose dark:prose-invert max-w-none space-y-4 text-fb-muted dark:text-fb-darkMuted leading-relaxed text-base md:text-lg">
                    <p>Mức giá cả là yếu tố then chốt quyết định sự lựa chọn của khách hàng. Tại cửa hàng Nguyễn Công, chúng tôi cam kết niêm yết giá công khai, minh bạch, tuyệt đối không có phụ phí ẩn hay tình trạng "chặt chém" khách du lịch. Chúng tôi tự tự khẳng định là đơn vị cung cấp <strong>dịch vụ cho thuê xe điện, xe máy giá rẻ Hà Nội</strong> với mức chi phí cạnh tranh nhất, đi kèm chất lượng vượt trội.</p>
                    
@@ -472,7 +709,7 @@
 
            <!-- Section 3 -->
            <div class="glass rounded-3xl p-6 sm:p-10 shadow-sm border border-white/50 dark:border-white/5">
-               <h2 class="text-3xl font-bold mb-6 text-fb-text dark:text-fb-darkText">3. Hướng dẫn thủ tục thuê xe nhanh gọn & Chính sách hỗ trợ khẩn cấp 24/7</h2>
+               <h2 class="text-3xl font-bold mb-6 text-fb-text dark:text-fb-darkText">Hướng dẫn thủ tục thuê xe nhanh gọn & Chính sách hỗ trợ khẩn cấp 24/7</h2>
                <div class="prose dark:prose-invert max-w-none space-y-4 text-fb-muted dark:text-fb-darkMuted leading-relaxed text-base md:text-lg">
                    <p>Nhiều người thường e ngại việc thuê xe sẽ đi kèm những thủ tục rườm rà, phải đặt cọc số tiền lớn hoặc ký kết nhiều giấy tờ phức tạp. Tại Nguyễn Công, chúng tôi đã áp dụng công nghệ quản lý hiện đại để tối giản hóa toàn bộ thủ tục thuê xe. Phương châm của chúng tôi là: "Giao dịch 5 phút - Vi vu cả ngày". Bạn không cần chờ đợi mòn mỏi, không cần thủ tục thế chấp phức tạp.</p>
                    
