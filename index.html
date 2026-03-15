@@ -201,8 +201,15 @@
        <!-- APPLE ULTRA MOBILE MENU OVERLAY -->
        <div id="mobileMenu" class="fixed inset-0 z-40 bg-white/85 dark:bg-[#050505]/85 backdrop-blur-3xl opacity-0 pointer-events-none transition-opacity duration-500 flex flex-col pt-24 pb-10 px-6 overflow-y-auto">
            
+           <!-- Trạng thái mở/đóng cửa (Đã chuyển lên trên) -->
+           <div class="mobile-menu-item opacity-0 translate-y-8 transition-all duration-700 apple-easing bg-black/5 dark:bg-white/5 rounded-2xl p-4 mb-6 flex items-center justify-center border border-black/5 dark:border-white/10 shadow-sm">
+               <div id="mobileStoreStatus">
+                    <!-- JS tự động inject -->
+               </div>
+           </div>
+
            <!-- Danh sách Links (Có tích hợp Icons chuyên nghiệp) -->
-           <nav class="flex flex-col space-y-4 mt-2">
+           <nav class="flex flex-col space-y-4">
                <a href="#" class="mobile-menu-item group flex justify-between items-center opacity-0 translate-y-8 transition-all duration-700 apple-easing text-xl sm:text-2xl font-bold text-fb-text dark:text-fb-darkText border-b border-black/5 dark:border-white/5 pb-4">
                    <div class="flex items-center gap-4">
                        <div class="w-11 h-11 rounded-2xl bg-fb-primary/10 flex items-center justify-center text-fb-primary">
@@ -253,27 +260,6 @@
                    <i class="ph ph-arrow-right text-xl text-fb-primary opacity-0 -translate-x-4 transition-all duration-300 group-active:opacity-100 group-active:translate-x-0"></i>
                </a>
            </nav>
-
-           <!-- Hộp Liên Hệ Ultra & Trạng Thái Mở Cửa Tự Động -->
-           <div class="mt-auto pt-8 pb-2">
-               <div class="mobile-menu-item opacity-0 translate-y-8 transition-all duration-700 apple-easing bg-gradient-to-br from-black/5 to-black/10 dark:from-white/10 dark:to-white/5 rounded-[2rem] p-6 backdrop-blur-md border border-black/5 dark:border-white/10 shadow-lg">
-                   
-                   <!-- Trạng thái mở/đóng cửa chèn vào đây -->
-                   <div id="mobileStoreStatus">
-                        <!-- JS tự động inject -->
-                   </div>
-
-                   <a href="tel:0816659199" class="flex items-center gap-5 group mt-2">
-                       <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-fb-primary flex items-center justify-center text-white ultra-glow group-hover:scale-105 transition-transform duration-300">
-                           <i class="ph-fill ph-phone-call text-2xl sm:text-3xl animate-pulse"></i>
-                       </div>
-                       <div>
-                           <p class="text-2xl sm:text-3xl font-extrabold tracking-tight text-fb-text dark:text-white">0816 659 199</p>
-                           <p class="text-sm font-semibold text-fb-primary mt-1">Chạm để gọi hỗ trợ</p>
-                       </div>
-                   </a>
-               </div>
-           </div>
        </div>
    </header>
 
@@ -504,7 +490,7 @@
                            <i class="ph-fill ph-check-circle text-fb-primary text-2xl mt-0.5"></i>
                            <div>
                                <strong class="text-fb-text dark:text-fb-darkText block text-lg">Đối với sinh viên, người đi làm tại Hà Nội:</strong> 
-                               Bạn cần xuất trình CCCD gắn chip kèm theo Thẻ sinh viên (đối với sinh viên) hoặc Giấy phép lái xe (bản photo). Trong trường hợp bạn không muốn để lại giấy tờ tùy thân quan trọng, bạn có thể chọn hình thức đặt cọc một khoản tiền nhỏ từ 1.000.000đ đến 3.000.000đ (tùy thuộc vào giá trị của dòng xe bạn thuê). Tiền cọc sẽ được hoàn trả 100% ngay lập tức khi bạn giao trả xe nguyên vẹn.
+                               Bạn cần xuất trình CCCD gắn chip kèm theo Thẻ sinh viên (đối với sinh viên) hoặc Giấy phép lái xe (bản photo). Trong trường hợp bạn không muốn để lại giấy tờ tùy thân quan trọng, bạn có thể chọn hình thức đặt cọc một khoản tiền nhỏ từ 1.000.000đ đến 3.000.000đ (tùy thuộc vào giá trị của dòng xe bạn badge thuê). Tiền cọc sẽ được hoàn trả 100% ngay lập tức khi bạn giao trả xe nguyên vẹn.
                            </div>
                        </li>
                    </ul>
