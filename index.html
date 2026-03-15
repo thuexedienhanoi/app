@@ -748,50 +748,86 @@
    <!-- Footer -->
    <footer class="glass border-t border-black/10 dark:border-white/10 mt-10">
        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-           <div class="flex flex-col md:flex-row justify-between gap-10">
-               <!-- Cột thông tin thương hiệu -->
-               <div class="space-y-4 md:max-w-md">
+           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+               
+               <!-- Cột 1: Thông tin thương hiệu & Mạng xã hội -->
+               <div class="space-y-4">
                    <div class="flex items-center gap-2">
                        <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-8 h-8 rounded-full shadow-sm object-cover bg-white">
-                       <span class="font-bold text-lg">Nguyễn Công</span>
+                       <span class="font-bold text-lg text-fb-text dark:text-fb-darkText">Nguyễn Công</span>
                    </div>
-                   <p class="text-sm text-fb-muted dark:text-fb-darkMuted">
+                   <p class="text-sm text-fb-muted dark:text-fb-darkMuted leading-relaxed">
                        Dịch vụ cho thuê xe điện, xe máy giá rẻ hàng đầu tại Hà Nội. Uy tín, chất lượng, thủ tục nhanh gọn.
                    </p>
-                   <div class="flex space-x-4">
-                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors"><i class="ph ph-facebook-logo text-xl"></i></a>
-                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors"><i class="ph ph-youtube-logo text-xl"></i></a>
-                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors"><i class="ph ph-tiktok-logo text-xl"></i></a>
+                   <div class="flex flex-wrap gap-3 pt-2">
+                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors" aria-label="Facebook"><i class="ph ph-facebook-logo text-xl"></i></a>
+                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors" aria-label="YouTube"><i class="ph ph-youtube-logo text-xl"></i></a>
+                       <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors" aria-label="TikTok"><i class="ph ph-tiktok-logo text-xl"></i></a>
+                       <!-- Link Văn Chính được thêm vào đây -->
+                       <a href="https://chothuexemayohanoi.github.io/vanchinh/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-fb-primary hover:text-white transition-colors" title="Đối tác Văn Chính" aria-label="Website Văn Chính"><i class="ph ph-globe text-xl"></i></a>
                    </div>
                </div>
-               
-               <!-- Cột liên hệ -->
+
+               <!-- Cột 2: Menu Liên Kết Nhanh -->
                <div>
-                   <h4 class="font-bold mb-4">Liên hệ</h4>
-                   <ul class="space-y-3 text-sm text-fb-muted dark:text-fb-darkMuted">
+                   <h4 class="font-bold text-lg mb-4 text-fb-text dark:text-fb-darkText">Liên kết nhanh</h4>
+                   <ul class="space-y-3 text-sm text-fb-muted dark:text-fb-darkMuted font-medium">
+                       <li><a href="trangchu.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Trang chủ</a></li>
+                       <li><a href="gioithieu.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Giới thiệu</a></li>
+                       <li><a href="hoidap.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> FAQ (Hỏi đáp)</a></li>
+                       <li><a href="chinhsach.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Chính sách</a></li>
+                       <li><a href="baomat.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Bảo mật</a></li>
+                       <li><a href="lienhe.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Liên hệ</a></li>
+                   </ul>
+               </div>
+
+               <!-- Cột 3: Menu Dịch Vụ -->
+               <div>
+                   <h4 class="font-bold text-lg mb-4 text-fb-text dark:text-fb-darkText">Dịch vụ thuê xe</h4>
+                   <ul class="space-y-3 text-sm text-fb-muted dark:text-fb-darkMuted font-medium">
+                       <li><a href="longbien.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Long Biên</a></li>
+                       <li><a href="gialam.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Gia Lâm</a></li>
+                       <li><a href="hoankiem.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Hoàn Kiếm</a></li>
+                       <li><a href="phoco.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Phố Cổ</a></li>
+                       <li><a href="badinh.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Ba Đình</a></li>
+                       <li><a href="tayho.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Khu vực Tây Hồ</a></li>
+                       <li><a href="banggia.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Bảng giá thuê xe</a></li>
+                       <li><a href="thutuc.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Hướng dẫn thủ tục</a></li>
+                   </ul>
+               </div>
+               
+               <!-- Cột 4: Thông tin Liên hệ -->
+               <div>
+                   <h4 class="font-bold text-lg mb-4 text-fb-text dark:text-fb-darkText">Liên hệ</h4>
+                   <ul class="space-y-4 text-sm text-fb-muted dark:text-fb-darkMuted">
                        <li class="flex items-start gap-3">
-                           <i class="ph-fill ph-map-pin text-fb-primary text-lg mt-0.5"></i>
-                           <span>Số 6 ngõ 12 Bồ Đề, Long Biên, Hà Nội, Việt Nam</span>
+                           <div class="w-8 h-8 rounded-full bg-fb-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5"><i class="ph-fill ph-map-pin text-fb-primary text-lg"></i></div>
+                           <span class="leading-relaxed">Số 6 ngõ 12 Bồ Đề, Long Biên, Hà Nội, Việt Nam</span>
                        </li>
                        <li class="flex items-center gap-3">
-                           <i class="ph-fill ph-phone-call text-fb-primary text-lg"></i>
-                           <a href="tel:0816659199" class="hover:text-fb-primary font-medium">0816 659 199</a>
+                           <div class="w-8 h-8 rounded-full bg-fb-primary/10 flex items-center justify-center flex-shrink-0"><i class="ph-fill ph-phone-call text-fb-primary text-lg"></i></div>
+                           <a href="tel:0816659199" class="hover:text-fb-primary font-bold transition-colors">0816 659 199</a>
                        </li>
                        <li class="flex items-center gap-3">
-                           <i class="ph-fill ph-envelope text-fb-primary text-lg"></i>
-                           <a href="mailto:bellavn1102@gmail.com" class="hover:text-fb-primary">bellavn1102@gmail.com</a>
+                           <div class="w-8 h-8 rounded-full bg-fb-primary/10 flex items-center justify-center flex-shrink-0"><i class="ph-fill ph-envelope text-fb-primary text-lg"></i></div>
+                           <a href="mailto:bellavn1102@gmail.com" class="hover:text-fb-primary transition-colors line-clamp-1">bellavn1102@gmail.com</a>
                        </li>
                        <li class="flex items-center gap-3">
-                           <i class="ph-fill ph-clock text-fb-primary text-lg"></i>
-                           <span>Thời gian làm việc: 9:00 - 21:00</span>
+                           <div class="w-8 h-8 rounded-full bg-green-500/10 flex items-center justify-center flex-shrink-0"><i class="ph-fill ph-clock text-green-500 text-lg"></i></div>
+                           <span class="font-medium">Mở cửa: 9:00 - 21:00</span>
                        </li>
                    </ul>
                </div>
+               
            </div>
            
            <!-- Bản quyền -->
-           <div class="border-t border-black/10 dark:border-white/10 mt-8 pt-8 text-center text-sm text-fb-muted dark:text-fb-darkMuted">
-               © 2026 Thuê Xe Máy Nguyễn Công. Đã đăng ký bản quyền.
+           <div class="border-t border-black/10 dark:border-white/10 mt-12 pt-8 text-center text-sm text-fb-muted dark:text-fb-darkMuted flex flex-col md:flex-row justify-between items-center gap-4">
+               <span>© 2026 Thuê Xe Máy Nguyễn Công. Đã đăng ký bản quyền.</span>
+               <div class="flex items-center gap-6 font-medium">
+                   <a href="chinhsach.html" class="hover:text-fb-primary transition-colors">Điều khoản dịch vụ</a>
+                   <a href="baomat.html" class="hover:text-fb-primary transition-colors">Chính sách bảo mật</a>
+               </div>
            </div>
        </div>
    </footer>
