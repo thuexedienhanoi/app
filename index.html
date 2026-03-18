@@ -1155,6 +1155,16 @@
             mobileMenuBtn.addEventListener('click', toggleDrawer);
             mobileMenuOverlay.addEventListener('click', toggleDrawer); // Click ra ngoài để đóng
 
+            // BỔ SUNG FIX LỖI: Tự động đóng Menu khi click vào bất kỳ link nào
+            const drawerLinks = mobileDrawer.querySelectorAll('a');
+            drawerLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isDrawerOpen) {
+                        toggleDrawer(); // Đóng menu lại
+                    }
+                });
+            });
+
             // Dropdown trong Mobile Menu
             const mobileServicesToggleBtn = document.getElementById('mobileServicesToggleBtn');
             if(mobileServicesToggleBtn) {
