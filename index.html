@@ -238,77 +238,158 @@
 </head>
 <body class="bg-mesh text-fb-text dark:text-fb-darkText min-h-screen pb-10 antialiased selection:bg-fb-primary/30 selection:text-fb-primary">
 
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full z-40 glass border-b border-black/5 dark:border-white/5 transition-all duration-300 animate-fade-in" id="mainHeader">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-50">
-            <div class="flex justify-between items-center h-16">
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center lg:hidden">
-                    <button type="button" id="mobileMenuBtn" aria-expanded="false" class="p-2 -ml-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative z-50" aria-label="Mở Menu">
+    <!-- ULTRA APP NAVBAR -->
+    <header class="fixed top-0 w-full z-40 transition-all duration-300 animate-fade-in glass border-b border-black/5 dark:border-white/5" id="mainHeader">
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-50">
+            <div class="flex justify-between items-center h-[72px]">
+                
+                <!-- Left: Mobile Menu Btn + Logo -->
+                <div class="flex items-center gap-2 sm:gap-4 lg:w-1/4">
+                    <!-- Mobile Menu Button -->
+                    <button type="button" id="mobileMenuBtn" aria-expanded="false" class="p-2 -ml-2 rounded-full lg:hidden hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative z-50" aria-label="Mở Menu">
                         <i id="mobileMenuIcon" class="ph ph-list text-2xl text-fb-primary transition-transform duration-300"></i>
                     </button>
+
+                    <!-- Logo -->
+                    <a href="https://thuexedienhanoi.github.io/app/" class="flex items-center gap-2.5 relative z-50 group focus:outline-none focus-visible:ring-2 focus-visible:ring-fb-primary rounded-xl" aria-label="Trang chủ">
+                        <div class="relative overflow-hidden rounded-full shadow-md bg-white p-0.5 transform transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover">
+                        </div>
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-fb-primary via-blue-600 to-purple-600 dark:to-purple-400">Nguyễn Công</span>
+                    </a>
                 </div>
 
-                <!-- Logo -->
-                <a href="https://thuexedienhanoi.github.io/app/" class="flex flex-shrink-0 items-center gap-2 sm:gap-3 relative z-50 hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-fb-primary rounded-lg" aria-label="Trang chủ">
-                    <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full shadow-lg object-cover bg-white">
-                    <span class="font-bold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-fb-primary to-purple-600 dark:to-purple-400">Nguyễn Công</span>
-                </a>
+                <!-- Center: Ultra Desktop Nav (Floating Pill Style) -->
+                <div class="hidden lg:flex justify-center flex-1">
+                    <nav class="flex items-center p-1.5 bg-white/40 dark:bg-black/20 border border-black/5 dark:border-white/10 rounded-2xl shadow-sm backdrop-blur-xl">
+                        
+                        <!-- Link: Trang chủ -->
+                        <a href="https://thuexedienhanoi.github.io/app/" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-fb-primary/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-house text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                            <span class="relative z-10">Trang chủ</span>
+                        </a>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden lg:flex space-x-1 items-center">
-                    <a href="https://thuexedienhanoi.github.io/app/" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-house text-lg"></i> Trang chủ
-                    </a>
-                    <a href="gioithieu.html" class="px-2 py-2 xl:px-3 rounded-xl bg-black/5 dark:bg-white/10 font-semibold text-fb-primary flex items-center gap-1.5 transition-colors text-sm xl:text-base">
-                        <i class="ph-fill ph-info text-lg"></i> Giới thiệu
-                    </a>
-                    
-                    <!-- Dropdown Dịch vụ -->
-                    <div class="relative group">
-                        <button type="button" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base" aria-haspopup="true" aria-expanded="false">
-                            <i class="ph-fill ph-scooter text-lg"></i> Dịch vụ <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 bg-white dark:bg-[#242526] rounded-xl shadow-xl border border-black/5 dark:border-white/10 z-50 overflow-hidden">
-                            <div class="py-1">
-                                <a href="longbien.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Long Biên</a>
-                                <a href="gialam.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Gia Lâm</a>
-                                <a href="hoankiem.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Hoàn Kiếm</a>
-                                <a href="phoco.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Phố Cổ</a>
-                                <a href="badinh.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Ba Đình</a>
-                                <a href="tayho.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Tây Hồ</a>
-                                <a href="banggia.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Bảng giá</a>
-                                <a href="thutuc.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-bold transition-colors text-fb-primary border-t border-black/5 dark:border-white/10">Thủ tục</a>
+                        <!-- Link: Giới thiệu (Active Style) -->
+                        <a href="gioithieu.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-primary font-bold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-fb-primary/10 rounded-xl transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-info text-[18px] relative z-10"></i>
+                            <span class="relative z-10">Giới thiệu</span>
+                        </a>
+                        
+                        <!-- Dropdown: Dịch vụ (Mega Menu) -->
+                        <div class="relative group px-1">
+                            <button type="button" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base" aria-haspopup="true" aria-expanded="false">
+                                <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                                <i class="ph-fill ph-scooter text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-orange-500"></i>
+                                <span class="relative z-10">Dịch vụ</span> 
+                                <i class="ph-bold ph-caret-down text-[10px] relative z-10 transition-transform duration-300 group-hover:rotate-180 ml-0.5 mt-0.5"></i>
+                            </button>
+                            
+                            <!-- Mega Menu Content -->
+                            <div class="absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 w-[420px] xl:w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] z-50">
+                                <!-- Invisible bridge to keep hover active -->
+                                <div class="absolute -top-4 left-0 w-full h-4"></div>
+                                
+                                <div class="bg-white/95 dark:bg-[#1a1c20]/95 backdrop-blur-3xl rounded-[24px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] border border-black/5 dark:border-white/10 p-3 transform origin-top -translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <!-- Column 1: Khu vực -->
+                                        <div class="flex flex-col gap-1 p-2">
+                                            <h4 class="text-[11px] font-bold text-fb-muted dark:text-gray-400 uppercase tracking-widest px-2 mb-2">Khu vực thuê xe</h4>
+                                            
+                                            <a href="longbien.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Long Biên</span>
+                                            </a>
+                                            <a href="gialam.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Gia Lâm</span>
+                                            </a>
+                                            <a href="hoankiem.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Hoàn Kiếm</span>
+                                            </a>
+                                            <a href="phoco.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Phố Cổ</span>
+                                            </a>
+                                            <a href="badinh.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Ba Đình</span>
+                                            </a>
+                                            <a href="tayho.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Tây Hồ</span>
+                                            </a>
+                                        </div>
+                                        
+                                        <!-- Column 2: Thông tin thêm -->
+                                        <div class="flex flex-col gap-1 p-2 bg-black/[0.02] dark:bg-white/[0.02] rounded-[16px]">
+                                            <h4 class="text-[11px] font-bold text-fb-muted dark:text-gray-400 uppercase tracking-widest px-2 mb-2">Thông tin & Bảng giá</h4>
+                                            
+                                            <a href="banggia.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white dark:hover:bg-[#242526] hover:shadow-sm transition-all group/item">
+                                                <div class="w-10 h-10 rounded-lg bg-green-500/10 text-green-500 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-receipt text-xl"></i></div>
+                                                <div>
+                                                    <span class="block font-bold text-sm text-fb-text dark:text-white group-hover/item:text-green-500 transition-colors">Bảng giá 2026</span>
+                                                    <span class="block text-xs text-fb-muted dark:text-gray-400 mt-0.5">Chi phí thuê ngày/tháng</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="thutuc.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white dark:hover:bg-[#242526] hover:shadow-sm transition-all group/item mt-1">
+                                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-500 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-file-text text-xl"></i></div>
+                                                <div>
+                                                    <span class="block font-bold text-sm text-fb-text dark:text-white group-hover/item:text-purple-500 transition-colors">Thủ tục thuê</span>
+                                                    <span class="block text-xs text-fb-muted dark:text-gray-400 mt-0.5">Không cần cọc tiền</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <div class="mt-auto pt-4 px-2">
+                                                <div class="bg-gradient-to-r from-fb-primary/10 to-blue-500/10 rounded-xl p-3 border border-fb-primary/20">
+                                                    <span class="flex items-center gap-1.5 text-xs font-bold text-fb-primary"><i class="ph-fill ph-lightning"></i> Giao xe 15 phút</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <a href="hoidap.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-question text-lg"></i> FAQ
-                    </a>
-                    <a href="chinhsach.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-shield-check text-lg"></i> Chính sách
-                    </a>
-                    <a href="baomat.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-lock-key text-lg"></i> Bảo mật
-                    </a>
-                    <a href="lienhe.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-address-book text-lg"></i> Liên hệ
-                    </a>
-                </nav>
+                        <!-- Link: FAQ -->
+                        <a href="hoidap.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-question text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-pink-500"></i>
+                            <span class="relative z-10">FAQ</span>
+                        </a>
 
-                <!-- Actions -->
-                <div class="flex items-center space-x-2 sm:space-x-3 relative z-50">
-                    <button type="button" id="themeToggle" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-black/10 dark:hover:bg-white/20 transition-colors" aria-label="Chuyển đổi giao diện Sáng/Tối">
-                        <i class="ph ph-moon text-xl dark:hidden" aria-hidden="true" title="Chuyển sang chế độ Tối"></i>
-                        <i class="ph ph-sun text-xl hidden dark:block" aria-hidden="true" title="Chuyển sang chế độ Sáng"></i>
+                        <!-- Link: Chính sách -->
+                        <a href="chinhsach.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-shield-check text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-emerald-500"></i>
+                            <span class="relative z-10">Chính sách</span>
+                        </a>
+                        
+                        <!-- Link: Liên hệ -->
+                        <a href="lienhe.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-address-book text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-indigo-500"></i>
+                            <span class="relative z-10">Liên hệ</span>
+                        </a>
+                        
+                    </nav>
+                </div>
+
+                <!-- Right: Actions -->
+                <div class="flex items-center justify-end space-x-2 sm:space-x-3 lg:w-1/4 relative z-50">
+                    <button type="button" id="themeToggle" class="w-10 h-10 rounded-full bg-white dark:bg-[#242526] border border-black/5 dark:border-white/10 flex items-center justify-center hover:scale-110 hover:shadow-md transition-all duration-300" aria-label="Chuyển đổi giao diện Sáng/Tối">
+                        <i class="ph-fill ph-moon text-[20px] text-indigo-500 dark:hidden" aria-hidden="true" title="Chuyển sang chế độ Tối"></i>
+                        <i class="ph-fill ph-sun text-[20px] text-yellow-400 hidden dark:block" aria-hidden="true" title="Chuyển sang chế độ Sáng"></i>
                     </button>
                     
-                    <div id="desktopStoreStatus" class="hidden sm:flex items-center gap-2 bg-gray-50 dark:bg-white/5 text-gray-500 border border-black/10 px-4 py-2 rounded-full font-semibold text-sm transition-all cursor-default shadow-sm">
+                    <div id="desktopStoreStatus" class="hidden sm:flex items-center gap-2 bg-white dark:bg-[#242526] border border-black/5 dark:border-white/10 px-4 py-2.5 rounded-full font-bold text-sm transition-all cursor-default shadow-sm">
                         <!-- JS Inject -->
                     </div>
                 </div>
+                
             </div>
         </div>
     </header>
