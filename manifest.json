@@ -1,0 +1,15 @@
+{
+  "name": "Thuê xe điện Hà Nội",
+  "short_name": "Thuê xe HN",
+  "start_url": "/app/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a58ca",
+  "icons": [
+    {
+      "src": "IMG_1177.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
