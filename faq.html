@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- SEO PRO MODE: Meta Tags -->
-    <title>Hỏi Đáp Cho Thuê Xe Điện Hà Nội & Xe Máy Giá Rẻ Nguyễn Công</title>
-    <meta name="description" content="Giải đáp A-Z về dịch vụ cho thuê xe điện Hà Nội và xe máy giá rẻ Nguyễn Công. Xem ngay thủ tục, giá cả, chính sách giao xe tận nơi. Gọi đặt xe ngay!">
-    <meta name="keywords" content="Cho thuê xe điện Hà Nội, cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công, hỏi đáp thuê xe máy, thủ tục thuê xe điện, thuê xe máy không cần cọc, thuê xe máy Nguyễn Công">
+    <title>Hỏi Đáp Cho Thuê Xe Điện Hà Nội & Xe Máy Giá Rẻ | Đặt Ngay</title>
+    <meta name="description" content="Giải đáp mọi thắc mắc về dịch vụ cho thuê xe điện Hà Nội và cho thuê xe máy giá rẻ Nguyễn Công. Thủ tục nhanh, không cần cọc, giao tận nơi 24/7. Xem ngay!">
+    <meta name="keywords" content="Cho thuê xe điện Hà Nội, cho thuê xe máy, Dịch vụ cho thuê xe điện, xe máy giá rẻ Hà Nội - Nguyễn Công, thuê xe máy Nguyễn Công, thuê xe tay ga, thuê xe số, thuê xe Vinfast">
     <meta name="author" content="Nguyễn Công">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://thuexedienhanoi.github.io/app/faq.html">
@@ -18,8 +18,8 @@
     <meta property="og:locale" content="vi_VN">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thuexedienhanoi.github.io/app/faq.html">
-    <meta property="og:title" content="Hỏi Đáp Cho Thuê Xe Điện Hà Nội & Xe Máy Giá Rẻ Nguyễn Công">
-    <meta property="og:description" content="Giải đáp A-Z về dịch vụ cho thuê xe điện Hà Nội và xe máy giá rẻ Nguyễn Công. Xem ngay thủ tục, giá cả, chính sách giao xe tận nơi. Gọi đặt xe ngay!">
+    <meta property="og:title" content="Hỏi Đáp Cho Thuê Xe Điện Hà Nội & Xe Máy Giá Rẻ | Đặt Ngay">
+    <meta property="og:description" content="Giải đáp mọi thắc mắc về dịch vụ cho thuê xe điện Hà Nội và cho thuê xe máy giá rẻ Nguyễn Công. Thủ tục nhanh, không cần cọc, giao tận nơi 24/7. Xem ngay!">
     <meta property="og:image" content="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png">
     <meta property="og:site_name" content="Thuê Xe Nguyễn Công">
 
@@ -84,6 +84,7 @@
             -webkit-tap-highlight-color: transparent;
         }
 
+        /* Nền Mesh Gradient chuẩn App */
         .bg-mesh {
             background-color: #f8fafc;
             background-image: 
@@ -101,6 +102,7 @@
             background-attachment: fixed;
         }
         
+        /* Glass Navbar/Footer giữ nguyên tương thích */
         .glass {
             background: rgba(255, 255, 255, 0.75);
             backdrop-filter: blur(24px);
@@ -110,6 +112,7 @@
             background: rgba(24, 25, 26, 0.75);
         }
 
+        /* ULTRA GLASS cho Drawer Mobile (Cực mạnh) */
         .ultra-glass-drawer {
             background: rgba(255, 255, 255, 0.65);
             backdrop-filter: blur(40px) saturate(200%);
@@ -119,6 +122,7 @@
             background: rgba(18, 18, 20, 0.65);
         }
 
+        /* Ultra Cards cho Main Content */
         .ultra-card {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(30px);
@@ -161,6 +165,7 @@
             transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
         }
 
+        /* Ẩn thanh cuộn nhưng vẫn cuộn được cho App UI ngang */
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
@@ -169,6 +174,7 @@
             scrollbar-width: none;
         }
         
+        /* Smooth Details/Summary cho FAQ */
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
         details[open] summary ~ * {
@@ -179,6 +185,7 @@
             100%  {opacity: 1; transform: translateY(0)}
         }
 
+        /* Footer Accordion Logic (Mobile Only) */
         @media (max-width: 767px) {
             .footer-content {
                 display: grid;
@@ -200,91 +207,169 @@
                 opacity: 1 !important;
             }
         }
-        
-        /* Typography Content Formatting for long text */
-        .content-body p {
-            margin-bottom: 1rem;
-        }
-        .content-body ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
     </style>
 </head>
 <body class="bg-mesh text-fb-text dark:text-fb-darkText min-h-screen pb-10 antialiased selection:bg-fb-primary/30 selection:text-fb-primary">
 
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full z-40 glass border-b border-black/5 dark:border-white/5 transition-all duration-300 animate-fade-in" id="mainHeader">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-50">
-            <div class="flex justify-between items-center h-16">
-                <!-- Mobile Menu Button -->
-                <div class="flex items-center lg:hidden">
-                    <button type="button" id="mobileMenuBtn" aria-expanded="false" class="p-2 -ml-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative z-50" aria-label="Mở Menu">
+    <!-- ULTRA APP NAVBAR -->
+    <header class="fixed top-0 w-full z-40 transition-all duration-300 animate-fade-in glass border-b border-black/5 dark:border-white/5" id="mainHeader">
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-50">
+            <div class="flex justify-between items-center h-[72px]">
+                
+                <!-- Left: Mobile Menu Btn + Logo -->
+                <div class="flex items-center gap-2 sm:gap-4 lg:w-1/4">
+                    <!-- Mobile Menu Button -->
+                    <button type="button" id="mobileMenuBtn" aria-expanded="false" class="p-2 -ml-2 rounded-full lg:hidden hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative z-50" aria-label="Mở Menu">
                         <i id="mobileMenuIcon" class="ph ph-list text-2xl text-fb-primary transition-transform duration-300"></i>
                     </button>
+
+                    <!-- Logo -->
+                    <a href="https://thuexedienhanoi.github.io/app/" class="flex items-center gap-2.5 relative z-50 group focus:outline-none focus-visible:ring-2 focus-visible:ring-fb-primary rounded-xl" aria-label="Trang chủ">
+                        <div class="relative overflow-hidden rounded-full shadow-md bg-white p-0.5 transform transition-transform duration-500 group-hover:rotate-[360deg]">
+                            <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover">
+                        </div>
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-fb-primary via-blue-600 to-purple-600 dark:to-purple-400">Nguyễn Công</span>
+                    </a>
                 </div>
 
-                <!-- Logo -->
-                <a href="index.html" class="flex flex-shrink-0 items-center gap-2 sm:gap-3 relative z-50 hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-fb-primary rounded-lg" aria-label="Trang chủ">
-                    <img src="https://raw.githubusercontent.com/thuexedienhanoi/app/refs/heads/main/IMG_1177.png" alt="Logo Nguyễn Công" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full shadow-lg object-cover bg-white">
-                    <span class="font-bold text-lg sm:text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-fb-primary to-purple-600 dark:to-purple-400">Nguyễn Công</span>
-                </a>
+                <!-- Center: Ultra Desktop Nav (Floating Pill Style) -->
+                <div class="hidden lg:flex justify-center flex-1">
+                    <nav class="flex items-center p-1.5 bg-white/40 dark:bg-black/20 border border-black/5 dark:border-white/10 rounded-2xl shadow-sm backdrop-blur-xl">
+                        
+                        <!-- Link: Trang chủ -->
+                        <a href="https://thuexedienhanoi.github.io/app/" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-fb-primary/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-house text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                            <span class="relative z-10">Trang chủ</span>
+                        </a>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden lg:flex space-x-1 items-center">
-                    <a href="index.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-house text-lg"></i> Trang chủ
-                    </a>
-                    <a href="gioithieu.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-info text-lg"></i> Giới thiệu
-                    </a>
-                    
-                    <!-- Dropdown Dịch vụ -->
-                    <div class="relative group">
-                        <button type="button" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base" aria-haspopup="true" aria-expanded="false">
-                            <i class="ph-fill ph-scooter text-lg"></i> Dịch vụ <i class="ph ph-caret-down text-xs transition-transform duration-300 group-hover:rotate-180"></i>
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left scale-95 group-hover:scale-100 bg-white dark:bg-[#242526] rounded-xl shadow-xl border border-black/5 dark:border-white/10 z-50 overflow-hidden">
-                            <div class="py-1">
-                                <a href="longbien.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Long Biên</a>
-                                <a href="gialam.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Gia Lâm</a>
-                                <a href="hoankiem.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Hoàn Kiếm</a>
-                                <a href="phoco.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Phố Cổ</a>
-                                <a href="badinh.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Ba Đình</a>
-                                <a href="tayho.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Tây Hồ</a>
-                                <a href="banggia.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-medium transition-colors text-fb-text dark:text-fb-darkText">Bảng giá</a>
-                                <a href="thutuc.html" class="block px-4 py-2.5 hover:bg-black/5 dark:hover:bg-white/10 text-sm font-bold transition-colors text-fb-primary border-t border-black/5 dark:border-white/10">Thủ tục</a>
+                        <!-- Link: Giới thiệu -->
+                        <a href="gioithieu.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-primary font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-info text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300"></i>
+                            <span class="relative z-10">Giới thiệu</span>
+                        </a>
+                        
+                        <!-- Dropdown: Dịch vụ (Mega Menu) -->
+                        <div class="relative group px-1">
+                            <button type="button" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base" aria-haspopup="true" aria-expanded="false">
+                                <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                                <i class="ph-fill ph-scooter text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-orange-500"></i>
+                                <span class="relative z-10">Dịch vụ</span> 
+                                <i class="ph-bold ph-caret-down text-[10px] relative z-10 transition-transform duration-300 group-hover:rotate-180 ml-0.5 mt-0.5"></i>
+                            </button>
+                            
+                            <!-- Mega Menu Content -->
+                            <div class="absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 w-[420px] xl:w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] z-50">
+                                <!-- Invisible bridge to keep hover active -->
+                                <div class="absolute -top-4 left-0 w-full h-4"></div>
+                                
+                                <div class="bg-white/95 dark:bg-[#1a1c20]/95 backdrop-blur-3xl rounded-[24px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.6)] border border-black/5 dark:border-white/10 p-3 transform origin-top -translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <!-- Column 1: Khu vực -->
+                                        <div class="flex flex-col gap-1 p-2">
+                                            <h4 class="text-[11px] font-bold text-fb-muted dark:text-gray-400 uppercase tracking-widest px-2 mb-2">Khu vực thuê xe</h4>
+                                            
+                                            <a href="longbien.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Long Biên</span>
+                                            </a>
+                                            <a href="gialam.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Gia Lâm</span>
+                                            </a>
+                                            <a href="hoankiem.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Hoàn Kiếm</span>
+                                            </a>
+                                            <a href="phoco.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Phố Cổ</span>
+                                            </a>
+                                            <a href="badinh.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Ba Đình</span>
+                                            </a>
+                                            <a href="tayho.html" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 transition-colors group/item">
+                                                <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-map-pin"></i></div>
+                                                <span class="font-semibold text-sm text-fb-text dark:text-white group-hover/item:text-fb-primary transition-colors">Tây Hồ</span>
+                                            </a>
+                                        </div>
+                                        
+                                        <!-- Column 2: Thông tin thêm -->
+                                        <div class="flex flex-col gap-1 p-2 bg-black/[0.02] dark:bg-white/[0.02] rounded-[16px]">
+                                            <h4 class="text-[11px] font-bold text-fb-muted dark:text-gray-400 uppercase tracking-widest px-2 mb-2">Thông tin & Bảng giá</h4>
+                                            
+                                            <a href="banggia.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white dark:hover:bg-[#242526] hover:shadow-sm transition-all group/item">
+                                                <div class="w-10 h-10 rounded-lg bg-green-500/10 text-green-500 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-receipt text-xl"></i></div>
+                                                <div>
+                                                    <span class="block font-bold text-sm text-fb-text dark:text-white group-hover/item:text-green-500 transition-colors">Bảng giá 2026</span>
+                                                    <span class="block text-xs text-fb-muted dark:text-gray-400 mt-0.5">Chi phí thuê ngày/tháng</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="thutuc.html" class="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white dark:hover:bg-[#242526] hover:shadow-sm transition-all group/item mt-1">
+                                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-500 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform"><i class="ph-fill ph-file-text text-xl"></i></div>
+                                                <div>
+                                                    <span class="block font-bold text-sm text-fb-text dark:text-white group-hover/item:text-purple-500 transition-colors">Thủ tục thuê</span>
+                                                    <span class="block text-xs text-fb-muted dark:text-gray-400 mt-0.5">Không cần cọc tiền</span>
+                                                </div>
+                                            </a>
+                                            
+                                            <div class="mt-auto pt-4 px-2">
+                                                <div class="bg-gradient-to-r from-fb-primary/10 to-blue-500/10 rounded-xl p-3 border border-fb-primary/20">
+                                                    <span class="flex items-center gap-1.5 text-xs font-bold text-fb-primary"><i class="ph-fill ph-lightning"></i> Giao xe 15 phút</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <a href="faq.html" class="px-2 py-2 xl:px-3 rounded-xl bg-black/5 dark:bg-white/10 font-semibold text-fb-primary flex items-center gap-1.5 transition-colors text-sm xl:text-base">
-                        <i class="ph-fill ph-question text-lg"></i> FAQ
-                    </a>
-                    <a href="chinhsach.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-shield-check text-lg"></i> Chính sách
-                    </a>
-                    <a href="baomat.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-lock-key text-lg"></i> Bảo mật
-                    </a>
-                    <a href="lienhe.html" class="px-2 py-2 xl:px-3 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 font-medium transition-colors flex items-center gap-1.5 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white text-sm xl:text-base">
-                        <i class="ph-fill ph-address-book text-lg"></i> Liên hệ
-                    </a>
-                </nav>
+                        <!-- Link: FAQ (Active Style) -->
+                        <a href="hoidap.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-pink-500 font-bold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-pink-500/10 rounded-xl transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-question text-[18px] relative z-10"></i>
+                            <span class="relative z-10">FAQ</span>
+                        </a>
 
-                <!-- Actions -->
-                <div class="flex items-center space-x-2 sm:space-x-3 relative z-50">
-                    <button type="button" id="themeToggle" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center hover:bg-black/10 dark:hover:bg-white/20 transition-colors" aria-label="Chuyển đổi giao diện Sáng/Tối">
-                        <i class="ph ph-moon text-xl dark:hidden" aria-hidden="true" title="Chuyển sang chế độ Tối"></i>
-                        <i class="ph ph-sun text-xl hidden dark:block" aria-hidden="true" title="Chuyển sang chế độ Sáng"></i>
+                        <!-- Link: Điều khoản -->
+                        <a href="dieukhoan.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-file-text text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-cyan-500"></i>
+                            <span class="relative z-10">Điều khoản</span>
+                        </a>
+
+                        <!-- Link: Chính sách -->
+                        <a href="chinhsach.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-shield-check text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-emerald-500"></i>
+                            <span class="relative z-10">Chính sách</span>
+                        </a>
+                        
+                        <!-- Link: Liên hệ -->
+                        <a href="lienhe.html" class="group relative px-3 xl:px-4 py-2 rounded-xl flex items-center gap-1.5 overflow-hidden transition-all duration-300 text-fb-muted dark:text-fb-darkMuted hover:text-fb-text dark:hover:text-white font-semibold text-sm xl:text-base">
+                            <span class="absolute inset-0 bg-black/5 dark:bg-white/10 rounded-xl scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300 ease-out"></span>
+                            <i class="ph-fill ph-address-book text-[18px] relative z-10 group-hover:-translate-y-0.5 transition-transform duration-300 text-indigo-500"></i>
+                            <span class="relative z-10">Liên hệ</span>
+                        </a>
+                        
+                    </nav>
+                </div>
+
+                <!-- Right: Actions -->
+                <div class="flex items-center justify-end space-x-2 sm:space-x-3 lg:w-1/4 relative z-50">
+                    <button type="button" id="themeToggle" class="w-10 h-10 rounded-full bg-white dark:bg-[#242526] border border-black/5 dark:border-white/10 flex items-center justify-center hover:scale-110 hover:shadow-md transition-all duration-300" aria-label="Chuyển đổi giao diện Sáng/Tối">
+                        <i class="ph-fill ph-moon text-[20px] text-indigo-500 dark:hidden" aria-hidden="true" title="Chuyển sang chế độ Tối"></i>
+                        <i class="ph-fill ph-sun text-[20px] text-yellow-400 hidden dark:block" aria-hidden="true" title="Chuyển sang chế độ Sáng"></i>
                     </button>
                     
-                    <div id="desktopStoreStatus" class="hidden sm:flex items-center gap-2 bg-gray-50 dark:bg-white/5 text-gray-500 border border-black/10 px-4 py-2 rounded-full font-semibold text-sm transition-all cursor-default shadow-sm">
+                    <div id="desktopStoreStatus" class="hidden sm:flex items-center gap-2 bg-white dark:bg-[#242526] border border-black/5 dark:border-white/10 px-4 py-2.5 rounded-full font-bold text-sm transition-all cursor-default shadow-sm">
                         <!-- JS Inject -->
                     </div>
                 </div>
+                
             </div>
         </div>
     </header>
@@ -310,7 +395,7 @@
         <!-- Drawer Body (Scrollable Menu) -->
         <div class="flex-1 overflow-y-auto px-4 py-4 space-y-1 hide-scrollbar">
             
-            <a href="index.html" class="drawer-item block group rounded-2xl p-3 hover:bg-white/50 dark:hover:bg-black/20 active:bg-black/5 dark:active:bg-white/5 transition-colors">
+            <a href="https://thuexedienhanoi.github.io/app/" class="drawer-item block group rounded-2xl p-3 hover:bg-white/50 dark:hover:bg-black/20 active:bg-black/5 dark:active:bg-white/5 transition-colors">
                 <div class="flex items-center gap-4">
                     <div class="w-10 h-10 rounded-xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
                         <i class="ph-fill ph-house text-xl"></i>
@@ -352,12 +437,21 @@
                 </div>
             </div>
             
-            <a href="faq.html" class="drawer-item block group rounded-2xl p-3 hover:bg-white/50 dark:hover:bg-black/20 active:bg-black/5 dark:active:bg-white/5 transition-colors">
+            <a href="hoidap.html" class="drawer-item block group rounded-2xl p-3 hover:bg-white/50 dark:hover:bg-black/20 active:bg-black/5 dark:active:bg-white/5 transition-colors">
                 <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-fb-primary/10 flex items-center justify-center text-fb-primary shadow-inner">
+                    <div class="w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-500 shadow-inner">
                         <i class="ph-fill ph-question text-xl"></i>
                     </div>
-                    <span class="font-bold text-[17px] text-fb-primary">FAQ</span>
+                    <span class="font-bold text-[17px] text-pink-500">FAQ</span>
+                </div>
+            </a>
+
+            <a href="dieukhoan.html" class="drawer-item block group rounded-2xl p-3 hover:bg-white/50 dark:hover:bg-black/20 active:bg-black/5 dark:active:bg-white/5 transition-colors">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-black/5 dark:bg-white/10 flex items-center justify-center text-fb-muted dark:text-fb-darkMuted group-hover:bg-fb-primary/10 group-hover:text-fb-primary transition-colors">
+                        <i class="ph-fill ph-file-text text-xl"></i>
+                    </div>
+                    <span class="font-semibold text-[17px] text-fb-text dark:text-fb-darkText group-hover:text-fb-primary transition-colors">Điều khoản</span>
                 </div>
             </a>
             
@@ -391,7 +485,7 @@
 
         <!-- Drawer Footer -->
         <div class="p-6 border-t border-black/5 dark:border-white/10 flex justify-center gap-4">
-            <a href="#" class="w-10 h-10 rounded-full bg-white dark:bg-black/40 shadow-sm flex items-center justify-center text-fb-primary hover:scale-110 transition-transform"><i class="ph-fill ph-facebook-logo text-xl"></i></a>
+            <a href="https://maps.app.goo.gl/KxwzojFtfM2ET5Cm7?g_st=ic" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white dark:bg-black/40 shadow-sm flex items-center justify-center text-red-500 hover:scale-110 transition-transform"><i class="ph-fill ph-map-pin text-xl"></i></a>
             <a href="tel:0816659199" class="w-10 h-10 rounded-full bg-white dark:bg-black/40 shadow-sm flex items-center justify-center text-green-500 hover:scale-110 transition-transform"><i class="ph-fill ph-phone-call text-xl"></i></a>
             <a href="https://zalo.me/0816659199" class="w-10 h-10 rounded-full bg-white dark:bg-black/40 shadow-sm flex items-center justify-center text-blue-500 hover:scale-110 transition-transform"><span class="font-bold text-[10px]">Zalo</span></a>
         </div>
@@ -430,46 +524,46 @@
         <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob pointer-events-none dark:bg-purple-600/10"></div>
         <div class="absolute top-40 right-10 w-72 h-72 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob [animation-delay:2s] pointer-events-none dark:bg-blue-600/10"></div>
 
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION (Updated H1 ONLY, kept Calculator structure 100%) -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Text Content (Đổi H1) -->
+                <!-- Text Content (SEO H1 Updated) -->
                 <div class="lg:col-span-7 space-y-8 relative z-10">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 dark:bg-white/10 border border-black/5 dark:border-white/10 backdrop-blur-md shadow-sm">
                         <span class="relative flex h-2.5 w-2.5">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pink-500"></span>
                         </span>
-                        <span class="text-sm font-semibold text-fb-text dark:text-fb-darkText">Giải đáp 24/7 • Hotline: 0816 659 199</span>
+                        <span class="text-sm font-semibold text-fb-text dark:text-fb-darkText">Tổng hợp 100+ thắc mắc phổ biến</span>
                     </div>
                     
-                    <!-- H1 Tối ưu cho trang FAQ nhưng vẫn giữ KW chính -->
+                    <!-- H1 Optimize SEO: Changed text but kept structure & CTA intact -->
                     <h1 class="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight leading-[1.1] text-fb-text dark:text-white">
                         Hỏi Đáp Dịch Vụ 
-                        <span class="block text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-fb-primary via-blue-500 to-purple-600 pb-2 mt-3">Cho Thuê Xe Điện Hà Nội & Xe Máy Nguyễn Công</span>
+                        <span class="block text-3xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-fb-primary via-blue-500 to-purple-600 pb-2 mt-3">Cho Thuê Xe Điện Hà Nội & Xe Máy Giá Rẻ</span>
                     </h1>
                     
                     <p class="text-lg md:text-xl text-fb-muted dark:text-fb-darkMuted max-w-2xl font-medium leading-relaxed">
-                        Bạn có thắc mắc về giá cả, thủ tục, hay quy trình giao nhận? Hãy khám phá ngay trung tâm giải đáp thông tin chi tiết về dịch vụ <strong class="text-fb-text dark:text-gray-200">cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong> ở ngay bên dưới.
+                        Bạn có câu hỏi về thủ tục, giá cả, hoặc chính sách giao nhận? Khám phá ngay toàn bộ thông tin về <strong class="text-fb-text dark:text-gray-200">dịch vụ cho thuê xe máy Nguyễn Công, từ xe Vinfast, tay ga cho đến xe số.</strong>
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 pt-2">
                         <button type="button" class="group px-8 py-4 rounded-2xl bg-fb-primary text-white font-bold text-lg shadow-[0_8px_30px_rgba(24,119,242,0.3)] hover:shadow-[0_8px_30px_rgba(24,119,242,0.5)] hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2">
                             <i class="ph-fill ph-lightning text-xl group-hover:animate-pulse"></i> Đặt Xe Ngay
                         </button>
-                        <a href="#faq-section-1" class="px-8 py-4 rounded-2xl ultra-card font-bold text-lg hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 text-fb-text dark:text-white">
-                            <i class="ph-fill ph-book-open-text text-fb-primary"></i> Đọc Câu Hỏi Thường Gặp
+                        <a href="banggia.html" class="px-8 py-4 rounded-2xl ultra-card font-bold text-lg hover:-translate-y-1 active:translate-y-0 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 text-fb-text dark:text-white">
+                            <i class="ph-fill ph-receipt text-fb-primary"></i> Xem Bảng Giá
                         </a>
                     </div>
                     
                     <div class="flex items-center gap-8 pt-4">
                         <div class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-green-500 text-xl"></i> <span class="font-bold text-sm">Không cọc tiền</span></div>
-                        <div class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-green-500 text-xl"></i> <span class="font-bold text-sm">Giao xe siêu tốc</span></div>
+                        <div class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-green-500 text-xl"></i> <span class="font-bold text-sm">Xe đời mới 100%</span></div>
                     </div>
                 </div>
 
-                <!-- Calculator App Widget (Giữ nguyên tính tiền) -->
+                <!-- Calculator App Widget (Kept 100% Original Logic & Layout) -->
                 <div class="lg:col-span-5 relative z-10 group perspective-1000">
                     <div class="ultra-card p-1 sm:p-2 relative overflow-hidden transition-transform duration-500 hover:rotate-y-2 hover:rotate-x-2">
                         <!-- Glow background -->
@@ -537,295 +631,260 @@
             </div>
         </section>
 
-        <!-- SECTION 1: VỀ DỊCH VỤ XE ĐIỆN & XE MÁY -->
-        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" id="faq-section-1">
-            <div class="text-center mb-10">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 font-bold text-sm tracking-wide mb-3">
-                    <i class="ph-fill ph-leaf"></i> Phần 1: Tổng Quan Dịch Vụ
+        <!-- SECTION 1: CÂU HỎI VỀ THỦ TỤC & GIẤY TỜ -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 font-bold text-sm tracking-wide mb-3">
+                    <i class="ph-fill ph-file-text"></i> Chủ Đề 1
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-fb-text dark:text-white mb-4">Câu Hỏi Về Xe Điện & Xe Máy</h2>
-                <p class="text-fb-muted dark:text-gray-400 text-lg font-medium content-body">
-                    Khi tìm kiếm dịch vụ <strong>cho thuê xe điện Hà Nội</strong>, sự băn khoăn về chất lượng xe, mức pin và độ an toàn là điều dễ hiểu. Dưới đây là những giải đáp chi tiết nhất giúp bạn tự tin lựa chọn.
-                </p>
+                <h2 class="text-3xl font-extrabold text-fb-text dark:text-white">Thủ Tục Thuê Xe & Giấy Tờ Cần Thiết</h2>
+                <p class="text-fb-muted dark:text-gray-400 mt-3 font-medium text-lg leading-relaxed">Khi tìm đến dịch vụ <strong class="text-fb-text dark:text-gray-200">cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong>, yếu tố đầu tiên khách hàng quan tâm chính là giấy tờ. Đừng lo lắng, chúng tôi đã tối giản hóa mọi rườm rà để bạn nhận xe nhanh nhất có thể.</p>
             </div>
             
             <div class="space-y-4">
                 <details class="ultra-card group overflow-hidden" open>
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Bên mình có những dòng xe điện và xe máy nào?
-                        </div>
+                        <span class="flex items-center gap-3">Tôi cần chuẩn bị những giấy tờ gì để thuê xe?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Tại <strong>Nguyễn Công</strong>, chúng tôi tự hào cung cấp một hệ sinh thái xe vô cùng đa dạng để phục vụ mọi nhu cầu di chuyển:</p>
-                        <ul>
-                            <li><strong>Xe máy điện thông minh:</strong> Chủ lực là các dòng xe <em>VinFast Feliz S</em> và <em>VinFast Evo 200</em> đời mới nhất. Đây là lựa chọn hoàn hảo cho khách hàng tìm kiếm dịch vụ <strong>cho thuê xe điện Hà Nội</strong>, yêu thích sự êm ái, bảo vệ môi trường và cốp siêu rộng.</li>
-                            <li><strong>Xe tay ga cao cấp:</strong> Bao gồm Honda Vision, Honda Air Blade, Honda Lead. Xe được bảo dưỡng định kỳ, ngoại hình đẹp, cực kỳ phù hợp cho nữ giới và khách du lịch thích lượn phố, chụp ảnh.</li>
-                            <li><strong>Xe số bền bỉ:</strong> Honda Wave Alpha, Yamaha Sirius - "Chiến mã" siêu tiết kiệm xăng dành cho sinh viên, người đi làm hoặc đi phượt ngoại ô.</li>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        <p class="mb-2">Thủ tục tại cơ sở <strong>thuê xe máy Nguyễn Công</strong> cực kỳ linh hoạt:</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>Đối với khách du lịch:</strong> Bạn chỉ cần để lại Căn cước công dân (CCCD) gắn chip bản gốc, Hộ chiếu (Passport) hoặc Giấy phép lái xe (GPLX). Hãy cung cấp thêm thông tin vé máy bay khứ hồi hoặc địa chỉ khách sạn bạn lưu trú.</li>
+                            <li><strong>Đối với người đi làm/Sinh viên tại Hà Nội:</strong> Yêu cầu để lại CCCD gắn chip gốc, kèm theo GPLX bản photo (hoặc đối chiếu bản gốc).</li>
                         </ul>
+                        <p class="mt-2 text-sm italic">*Chi tiết đầy đủ bạn có thể xem tại trang <a href="thutuc.html" class="text-fb-primary hover:underline font-bold">hướng dẫn thủ tục thuê xe</a> của chúng tôi.</p>
                     </div>
                 </details>
 
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Thuê xe điện thì pin chạy được bao xa? Có chỗ sạc không?
-                        </div>
+                        <span class="flex items-center gap-3">Tôi có phải đặt cọc tiền mặt không? Cọc bao nhiêu?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Đây là câu hỏi thường gặp nhất khi khách hàng trải nghiệm mướn xe điện. Với dòng VinFast Feliz S và Evo 200 sử dụng công nghệ pin LFP tiên tiến, mỗi lần sạc đầy 100%, bạn có thể di chuyển quãng đường lên đến <strong>100km - 150km</strong> (tùy thuộc vào tốc độ và tải trọng).</p>
-                        <p>Khi giao xe, chúng tôi sẽ chuẩn bị sẵn bộ sạc chính hãng đi kèm. Ban đêm, bạn chỉ cần cắm sạc trực tiếp tại ổ điện 220V thông thường ở khách sạn, homestay hoặc nhà nghỉ. Sáng hôm sau xe sẽ đầy pin để bạn tiếp tục vi vu khắp các con phố.</p>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Một ưu điểm lớn khi bạn chọn dịch vụ của chúng tôi là chính sách <strong>MIỄN CỌC</strong> dành riêng cho khách du lịch có thông tin lưu trú rõ ràng. Trong trường hợp bạn là khách hàng nội thành không có đủ giấy tờ bảo lãnh, cửa hàng sẽ yêu cầu mức cọc trách nhiệm dao động từ <strong>2.000.000đ đến 5.000.000đ</strong> tùy vào giá trị của xe (xe số, xe ga hay xe điện).
                     </div>
                 </details>
 
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Xe có được kiểm tra, bảo dưỡng thường xuyên không?
-                        </div>
+                        <span class="flex items-center gap-3">Khách nước ngoài có thuê được xe không?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>An toàn của bạn là ưu tiên số một của chúng tôi. Với cương vị là đơn vị cung cấp dịch vụ <strong>cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong> uy tín, 100% xe trước khi giao cho khách hàng đều phải trải qua quy trình kiểm tra 5 bước nghiêm ngặt:</p>
-                        <ul>
-                            <li>Kiểm tra hệ thống phanh (thắng) trước và sau.</li>
-                            <li>Đo áp suất lốp, độ mòn của vỏ xe.</li>
-                            <li>Kiểm tra hệ thống đèn pha, xi nhan, còi.</li>
-                            <li>Đối với xe máy xăng: Thay nhớt định kỳ mỗi 1500km.</li>
-                            <li>Đối với xe điện: Kiểm tra tình trạng xả/sạc của Pin LFP đảm bảo không chai pin.</li>
-                        </ul>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Hoàn toàn được! Dịch vụ <strong>cho thuê xe điện Hà Nội</strong> của chúng tôi rất được du khách quốc tế ưa chuộng. Khách nước ngoài chỉ cần để lại Hộ chiếu (Passport) bản gốc và Visa còn hạn mốc thời gian lưu trú tại Việt Nam. Chúng tôi cũng yêu cầu khách hàng phải có Giấy phép lái xe quốc tế (IDP) hợp lệ để đảm bảo an toàn giao thông theo luật pháp Việt Nam.
                     </div>
                 </details>
             </div>
         </section>
 
-        <!-- SECTION 2: BẢNG GIÁ & CHI PHÍ -->
-        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" id="faq-section-2">
-            <div class="text-center mb-10">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold text-sm tracking-wide mb-3">
-                    <i class="ph-fill ph-currency-circle-dollar"></i> Phần 2: Chi Phí & Thanh Toán
-                </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-fb-text dark:text-white mb-4">Bảng Giá & Thanh Toán</h2>
-                <p class="text-fb-muted dark:text-gray-400 text-lg font-medium content-body">
-                    Minh bạch về giá cả là tôn chỉ hoạt động của chúng tôi. Tìm hiểu ngay <a href="banggia.html" class="text-fb-primary hover:underline font-bold">bảng giá thuê xe máy chi tiết</a>.
-                </p>
-            </div>
-            
-            <div class="space-y-4">
-                <details class="ultra-card group overflow-hidden">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Giá thuê xe tính theo ngày hay theo 24 tiếng?
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
-                        </div>
-                    </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Để đảm bảo quyền lợi tốt nhất cho khách hàng, hệ thống của chúng tôi tính giá thuê theo chu kỳ <strong>24 tiếng là 1 ngày</strong>. </p>
-                        <p>Ví dụ: Bạn nhận xe lúc 9:00 sáng thứ Bảy và trả xe lúc 9:00 sáng Chủ Nhật, chúng tôi chỉ tính phí là 1 ngày thuê. Nếu bạn thuê xe số, chi phí sẽ chỉ là 150.000đ trọn gói. Điều này rất có lợi cho khách hàng so với việc bị tính phí theo "ngày lịch" như một số nơi khác.</p>
-                    </div>
-                </details>
-
-                <details class="ultra-card group overflow-hidden">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Nếu tôi trả xe trễ vài tiếng thì tính phí thế nào?
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
-                        </div>
-                    </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Chúng tôi cực kỳ linh động trong việc thu phí phát sinh. Khác với những cơ sở cho thuê xe máy khác bắt buộc tính thêm 1 ngày, nếu bạn lỡ trả trễ, mức phụ thu chỉ từ <strong>15.000đ - 20.000đ/giờ</strong> tùy loại xe.</p>
-                        <p>Tuy nhiên, nếu bạn trả trễ quá 6 tiếng, hệ thống sẽ tự động làm tròn thành phí của 1 ngày thuê. Bạn vui lòng liên hệ trước với Hotline nếu có thay đổi lịch trình để được hỗ trợ tốt nhất.</p>
-                    </div>
-                </details>
-
-                <details class="ultra-card group overflow-hidden">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Thuê xe theo tháng hoặc dài hạn có được giảm giá không?
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
-                        </div>
-                    </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Chắc chắn rồi! Nếu bạn đi công tác, thực tập sinh hoặc cần xe đi làm lâu dài tại thủ đô, gói thuê theo tháng là giải pháp tiết kiệm nhất:</p>
-                        <ul>
-                            <li><strong>Xe số:</strong> Chỉ từ 1.000.000đ - 1.200.000đ/tháng (Tiết kiệm ~70% so với thuê theo ngày).</li>
-                            <li><strong>Xe máy điện VinFast:</strong> Chỉ khoảng 1.600.000đ/tháng.</li>
-                            <li><strong>Xe tay ga:</strong> Dao động từ 1.200.000đ - 2.000.000đ/tháng tùy tình trạng xe.</li>
-                        </ul>
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <!-- SECTION 3: THỦ TỤC & QUY TRÌNH -->
-        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" id="faq-section-3">
-            <div class="text-center mb-10">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 font-bold text-sm tracking-wide mb-3">
-                    <i class="ph-fill ph-file-text"></i> Phần 3: Thủ Tục Pháp Lý
-                </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-fb-text dark:text-white mb-4">Quy Trình & Thủ Tục</h2>
-                <p class="text-fb-muted dark:text-gray-400 text-lg font-medium content-body">
-                    Mọi thứ đều được số hóa, <a href="thutuc.html" class="text-fb-primary hover:underline font-bold">thủ tục thuê xe điện, xe máy tại Nguyễn Công</a> diễn ra chưa đầy 5 phút.
-                </p>
-            </div>
-            
-            <div class="space-y-4">
-                <details class="ultra-card group overflow-hidden">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Tôi cần chuẩn bị giấy tờ gì để thuê xe?
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
-                        </div>
-                    </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Giấy tờ yêu cầu được phân loại cực kỳ đơn giản theo đối tượng khách hàng:</p>
-                        <ul>
-                            <li><strong>Đối với khách du lịch (Ngoại tỉnh/Quốc tế):</strong> Bạn chỉ cần cung cấp Căn cước công dân (CCCD) gắn chip bản gốc hoặc Hộ chiếu (Passport). Ngoài ra cung cấp thêm vé máy bay khứ hồi hoặc xác nhận đặt phòng khách sạn.</li>
-                            <li><strong>Đối với cư dân/Sinh viên tại Hà Nội:</strong> Yêu cầu cung cấp CCCD bản gốc kèm theo Bằng lái xe máy (A1/A2) hoặc Thẻ sinh viên.</li>
-                        </ul>
-                    </div>
-                </details>
-
-                <details class="ultra-card group overflow-hidden">
-                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Tôi nghe nói có chính sách KHÔNG CẦN ĐẶT CỌC?
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
-                        </div>
-                    </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Hoàn toàn chính xác! Để trở thành địa điểm <strong>cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong> được yêu thích nhất, chúng tôi áp dụng chính sách <strong>MIỄN CỌC 100%</strong> đối với khách du lịch có đầy đủ giấy tờ tùy thân (CCCD/Passport) trùng khớp với vé máy bay chiều về hoặc phòng khách sạn đã thanh toán.</p>
-                        <p>Trường hợp bạn không mang đủ giấy tờ hoặc là người dân nội thành muốn mướn xe đi lại, mức cọc áp dụng vô cùng nhẹ nhàng, chỉ từ <strong>2.000.000đ đến 5.000.000đ</strong> tùy vào giá trị chiếc xe bạn chọn. Tiền cọc sẽ được hoàn trả 100% ngay lập tức khi bạn trả xe.</p>
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <!-- SECTION 4: GIAO NHẬN & HỖ TRỢ -->
-        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" id="faq-section-4">
-            <div class="text-center mb-10">
+        <!-- SECTION 2: CÂU HỎI VỀ BẢNG GIÁ & CHI PHÍ -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-8">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 text-orange-600 dark:text-orange-400 font-bold text-sm tracking-wide mb-3">
-                    <i class="ph-fill ph-scooter"></i> Phần 4: Giao Nhận & Cứu Hộ
+                    <i class="ph-fill ph-currency-circle-dollar"></i> Chủ Đề 2
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-fb-text dark:text-white mb-4">Giao Xe & Hỗ Trợ Dọc Đường</h2>
-                <p class="text-fb-muted dark:text-gray-400 text-lg font-medium content-body">
-                    Hỗ trợ nhanh chóng mọi lúc mọi nơi. Tìm hiểu thêm về dịch vụ giao xe tại <a href="hoankiem.html" class="text-fb-primary hover:underline font-bold">Khu vực Hoàn Kiếm / Phố Cổ</a>.
-                </p>
+                <h2 class="text-3xl font-extrabold text-fb-text dark:text-white">Giá Thuê Xe & Cách Tính Chi Phí</h2>
+                <p class="text-fb-muted dark:text-gray-400 mt-3 font-medium text-lg leading-relaxed">Sự minh bạch trong <a href="banggia.html" class="text-fb-primary hover:underline font-bold">bảng giá</a> là lý do khách hàng gắn bó với chúng tôi. Dưới đây là cách chúng tôi tính cước cho dịch vụ <strong>thuê xe tay ga, thuê xe số, thuê xe Vinfast</strong>.</p>
             </div>
             
             <div class="space-y-4">
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Cửa hàng có mang xe đến tận khách sạn cho tôi không?
-                        </div>
+                        <span class="flex items-center gap-3">Một ngày thuê xe được tính bao nhiêu tiếng?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Có, chúng tôi tự hào cung cấp dịch vụ giao và nhận xe tận nơi 24/7. Việc của bạn chỉ là đặt xe qua Zalo hoặc Hotline, nhân viên sẽ mang xe đến tận sảnh khách sạn, bến xe, ga tàu điện trong vòng 15-30 phút.</p>
-                        <p>Đặc biệt: <strong>MIỄN PHÍ GIAO NHẬN</strong> trong bán kính 5km (Bao gồm khu vực Phố Cổ, Hoàn Kiếm, Long Biên). Nếu điểm giao xa hơn, cước phí phụ thu xăng xe hỗ trợ shipper chỉ khoảng 30.000đ - 50.000đ.</p>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Khác với nhiều đơn vị tính theo ngày lịch, Nguyễn Công áp dụng cách tính <strong>24 tiếng/ngày</strong> vô cùng có lợi cho khách hàng. <br>
+                        <em>Ví dụ:</em> Bạn nhận xe lúc 9h00 sáng ngày 10/10, thì tới đúng 9h00 sáng ngày 11/10 mới tròn 1 ngày thuê. Nhờ đó, bạn hoàn toàn chủ động được lịch trình di chuyển, dạo quanh phố cổ hay vui chơi ở <a href="hoankiem.html" class="text-fb-primary hover:underline font-bold">Khu vực Hoàn Kiếm</a> mà không sợ bị ép giờ trả xe trong ngày.
                     </div>
                 </details>
 
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Đang đi trên đường mà xe hỏng rớt sên, lủng lốp thì làm sao?
-                        </div>
+                        <span class="flex items-center gap-3">Trả xe quá giờ quy định tính phí thế nào?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Dù đã được bảo dưỡng kỹ càng nhưng những sự cố dọc đường (đặc biệt là đinh tặc) đôi khi vẫn xảy ra. Trong mọi trường hợp, hãy bình tĩnh tấp xe vào lề và gọi ngay <strong>Hotline: <a href="tel:0816659199" class="text-fb-primary font-bold">0816 659 199</a></strong>.</p>
-                        <ul>
-                            <li><strong>Lỗi do xe (chết máy, tuột sên, hỏng bình):</strong> Đội kỹ thuật sẽ ra tận nơi sửa chữa hoặc đổi ngay cho bạn một chiếc xe khác hoàn toàn miễn phí.</li>
-                            <li><strong>Lỗi do khách quan (Lủng lốp/thủng săm):</strong> Bạn vui lòng dắt vào tiệm sửa xe gần nhất để vá lốp (chi phí khách hàng tự chi trả do lốp dính đinh khi di chuyển). Trong trường hợp khuya muộn không có tiệm, đội cứu hộ của chúng tôi sẽ có mặt hỗ trợ.</li>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Chúng tôi vô cùng linh động. Nếu bạn trả quá giờ (do kẹt xe, lịch trình thay đổi), phụ phí chỉ được tính theo block giờ:
+                        <ul class="list-disc pl-5 mt-2 space-y-1">
+                            <li>Quá từ 1 - 3 tiếng: Phụ thu 20.000đ/giờ (với xe số) và 25.000đ/giờ (với xe ga/xe điện).</li>
+                            <li>Quá từ 4 - 6 tiếng: Tính bằng 50% giá thuê của 1 ngày.</li>
+                            <li>Quá trên 6 tiếng: Tính bằng giá thuê nguyên 1 ngày mới.</li>
                         </ul>
+                    </div>
+                </details>
+
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Thuê dài ngày hoặc theo tháng có được giảm giá không?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Có! Nếu bạn đi công tác hoặc cần phương tiện đi lại dài hạn, hãy chọn các gói thuê tuần hoặc tháng để có mức giá tốt nhất. Điển hình, gói <strong>thuê xe tay ga</strong> dài hạn chỉ từ 1.2 triệu đến 2 triệu/tháng. Gói thuê xe điện Vinfast chỉ khoảng 1.6 triệu/tháng (tiết kiệm đến 40% so với thuê lẻ từng ngày).
                     </div>
                 </details>
             </div>
         </section>
-        
-        <!-- SECTION 5: CHÍNH SÁCH KHÁC -->
-        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" id="faq-section-5">
-            <div class="text-center mb-10">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-sm tracking-wide mb-3">
-                    <i class="ph-fill ph-shield-warning"></i> Phần 5: Trách Nhiệm & Rủi Ro
+
+        <!-- SECTION 3: TẤT TẦN TẬT VỀ DỊCH VỤ XE ĐIỆN -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 font-bold text-sm tracking-wide mb-3">
+                    <i class="ph-fill ph-leaf"></i> Chủ Đề 3
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-fb-text dark:text-white mb-4">Các Chính Sách Khác</h2>
-                <p class="text-fb-muted dark:text-gray-400 text-lg font-medium content-body">
-                    Vui lòng tham khảo kỹ các <a href="chinhsach.html" class="text-fb-primary hover:underline font-bold">chính sách quy định chung</a> trước khi nhận xe để bảo vệ quyền lợi cá nhân.
-                </p>
+                <h2 class="text-3xl font-extrabold text-fb-text dark:text-white">Kinh Nghiệm Cho Thuê Xe Điện Hà Nội</h2>
+                <p class="text-fb-muted dark:text-gray-400 mt-3 font-medium text-lg leading-relaxed">Chạy xe điện đang là "Hot Trend" tại Thủ đô nhờ sự êm ái, thân thiện và tiết kiệm. Nếu đây là lần đầu bạn <strong class="text-fb-text dark:text-gray-200">thuê xe Vinfast</strong>, hãy đọc kỹ các lưu ý về pin và trạm sạc dưới đây.</p>
             </div>
             
             <div class="space-y-4">
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Nếu tôi vi phạm giao thông hoặc bị công an phạt thì sao?
-                        </div>
+                        <span class="flex items-center gap-3">Thuê xe Vinfast thì đi được bao nhiêu km một lần sạc?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Theo quy định của pháp luật Việt Nam và chính sách của dịch vụ <strong>cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong>, người điều khiển phương tiện phải hoàn toàn chịu trách nhiệm trước pháp luật về các hành vi vi phạm luật giao thông đường bộ.</p>
-                        <p>Trong trường hợp bạn bị CSGT xử phạt, vui lòng tự đóng phạt. Nếu xe bị tạm giữ, khách hàng có trách nhiệm thanh toán tiền phạt, chi phí lưu bãi và bồi thường số ngày xe bị giam không thể hoạt động cho vay theo bảng giá thuê xe hàng ngày.</p>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Tại Nguyễn Công, chúng tôi cung cấp 2 dòng xe điện chính là <strong>VinFast Feliz S</strong> và <strong>VinFast Evo 200</strong> sử dụng pin LFP tiên tiến nhất. Với một lần sạc đầy 100%, bạn có thể di chuyển quãng đường thực tế khoảng <strong>100km - 150km</strong> (tùy thuộc vào tải trọng và tốc độ). Quãng đường này là quá dư dả để bạn dạo chơi từ trung tâm Hà Nội sang tận <a href="longbien.html" class="text-fb-primary hover:underline font-bold">quận Long Biên</a> trong suốt 2-3 ngày mới cần sạc lại.
                     </div>
                 </details>
 
                 <details class="ultra-card group overflow-hidden">
                     <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
-                        <div class="flex items-center gap-3">
-                            <i class="ph-fill ph-question text-fb-primary text-2xl shrink-0"></i>
-                            Thuê xe bên mình có được cho mượn đủ mũ bảo hiểm không?
-                        </div>
+                        <span class="flex items-center gap-3">Tôi có thể sạc pin xe điện ở đâu? Có dễ sạc không?</span>
                         <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
-                            <i class="ph-bold ph-caret-down text-fb-text dark:text-white"></i>
+                            <i class="ph-bold ph-caret-down"></i>
                         </div>
                     </summary>
-                    <div class="px-6 pb-6 pt-0 ml-11 text-fb-muted dark:text-gray-300 font-medium leading-relaxed content-body">
-                        <p>Tất nhiên rồi! Nhằm mang lại trải nghiệm <strong>cho thuê xe điện Hà Nội</strong> hoàn hảo nhất, mỗi xe giao đến tay khách hàng đều được trang bị sẵn Combo quà tặng miễn phí bao gồm:</p>
-                        <ul>
-                            <li><strong>2 Mũ bảo hiểm đạt chuẩn:</strong> Luôn được vệ sinh, xịt khuẩn sạch sẽ sau mỗi lượt khách trả xe.</li>
-                            <li><strong>2 Áo mưa mỏng tiện lợi:</strong> Để trong cốp xe, sẵn sàng đối phó với những cơn mưa rào bất chợt của thủ đô.</li>
-                            <li><strong>Xăng / Pin:</strong> Xe xăng luôn có sẵn 1 lít xăng, xe máy điện luôn được sạc đầy 100% pin.</li>
-                        </ul>
-                        <p>Nếu bạn có bất cứ yêu cầu nào khác hay cần trao đổi chi tiết, đừng ngần ngại <a href="lienhe.html" class="text-fb-primary hover:underline font-bold">liên hệ trực tiếp</a> với đội ngũ tư vấn viên của Nguyễn Công nhé!</p>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Cực kỳ dễ dàng! Khi giao xe, chúng tôi sẽ cấp kèm bộ sạc di động chính hãng. Bạn chỉ cần cắm vào ổ điện 220V dân dụng (giống như sạc điện thoại hay laptop). Bạn có thể sạc ngay tại hầm gửi xe của khách sạn, nhà nghỉ, hoặc quán cà phê. Thời gian sạc từ lúc cạn đến đầy mất khoảng 4 - 6 tiếng, tốt nhất bạn nên cắm sạc qua đêm. 
                     </div>
                 </details>
+
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Xe điện có chạy được trời mưa ngập nước không?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Xe máy điện VinFast đạt tiêu chuẩn chống nước IP67. Động cơ và pin được niêm phong hoàn toàn, cho phép xe lội nước ngập 0.5 mét trong vòng 30 phút mà không chết máy. Tuy nhiên, để đảm bảo độ bền của tài sản, cửa hàng khuyến cáo khách hàng nên tránh các đoạn đường ngập sâu và lái xe cẩn thận khi trời mưa lớn.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- SECTION 4: GIAO NHẬN & CHĂM SÓC KHÁCH HÀNG -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold text-sm tracking-wide mb-3">
+                    <i class="ph-fill ph-truck"></i> Chủ Đề 4
+                </div>
+                <h2 class="text-3xl font-extrabold text-fb-text dark:text-white">Chính Sách Giao Nhận & Cứu Hộ Dọc Đường</h2>
+                <p class="text-fb-muted dark:text-gray-400 mt-3 font-medium text-lg leading-relaxed">Chúng tôi cam kết mang lại sự tiện lợi tối đa bằng dịch vụ giao xe tốc hành 15 phút, phủ sóng khắp các khu vực trung tâm.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Giao xe tận nơi có mất phí không? Nhận xe ở đâu?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Dịch vụ <strong>cho thuê xe máy giá rẻ Hà Nội - Nguyễn Công</strong> áp dụng chính sách <strong>GIAO NHẬN MIỄN PHÍ</strong> trong bán kính 5km (tính từ cơ sở Long Biên). Chúng tôi giao thẳng đến tận sảnh khách sạn, bến xe, ga tàu hoặc các điểm du lịch bạn yêu cầu. Với khoảng cách trên 5km, cửa hàng chỉ thu mức phụ phí nhỏ từ 30.000đ - 50.000đ để hỗ trợ tiền xăng cho nhân viên vận chuyển.
+                    </div>
+                </details>
+
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Trong cốp xe được trang bị sẵn những đồ dùng gì?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Để chuyến đi của bạn được an toàn và trọn vẹn, mỗi chiếc xe (bất kể bạn <strong>thuê xe tay ga</strong> hay xe điện) đều được trang bị sẵn gói phụ kiện quà tặng bao gồm:
+                        <ul class="list-disc pl-5 mt-2">
+                            <li>02 Mũ bảo hiểm đạt chuẩn (được vệ sinh, xịt khuẩn sạch sẽ sau mỗi lần khách trả).</li>
+                            <li>02 Áo mưa tiện lợi dự phòng thời tiết xấu.</li>
+                            <li>Đối với xe xăng: Tặng sẵn 1 lít xăng. Đủ để bạn chạy thẳng đến trạm xăng gần nhất.</li>
+                            <li>Đối với xe điện: Pin được sạc đầy 100% trước khi bàn giao.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Nếu xe bị hỏng hóc, thủng xăm giữa đường thì làm sao?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Chúng tôi hiểu rõ rủi ro trên đường đi. Cơ sở có đội ngũ <strong>cứu hộ trực 24/7</strong>. Nếu xe gặp sự cố do lỗi kỹ thuật (đứt dây ga, hỏng ắc quy, chết máy), nhân viên sẽ lập tức có mặt để đổi xe khác cho bạn hoàn toàn miễn phí. Trong trường hợp lỗi chủ quan như xịt lốp, thủng xăm, bạn có thể tạt vào tiệm sửa xe ven đường vá lại (phí khoảng 15-20k) hoặc gọi Hotline để nhân viên mang đồ nghề ra hỗ trợ khắc phục. Xem thêm <a href="chinhsach.html" class="text-fb-primary hover:underline font-bold">chính sách hỗ trợ rủi ro</a> tại đây.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- SECTION 5: XỬ LÝ RỦI RO & LUẬT GIAO THÔNG -->
+        <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 text-red-600 dark:text-red-400 font-bold text-sm tracking-wide mb-3">
+                    <i class="ph-fill ph-warning-circle"></i> Chủ Đề 5
+                </div>
+                <h2 class="text-3xl font-extrabold text-fb-text dark:text-white">Quy Định & Xử Lý Sự Cố Vi Phạm</h2>
+                <p class="text-fb-muted dark:text-gray-400 mt-3 font-medium text-lg leading-relaxed">Đảm bảo an toàn giao thông là trách nhiệm của mỗi người. Dưới đây là các lưu ý về pháp lý khi bạn tham gia giao thông tại Hà Nội bằng xe thuê.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Bị CSGT thổi phạt thì ai là người chịu trách nhiệm?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Toàn bộ xe do cửa hàng cung cấp đều có đầy đủ giấy tờ xe hợp lệ (Bản photo công chứng kèm mộc đỏ theo luật hiện hành) và bảo hiểm bắt buộc. Tuy nhiên, nếu bị Cảnh sát giao thông xử phạt vì lỗi cá nhân (vượt đèn đỏ, không đội mũ bảo hiểm, sai làn đường, vi phạm nồng độ cồn), <strong>khách thuê xe sẽ phải tự chịu 100% chi phí nộp phạt hành chính</strong> theo biên bản. Hãy luôn tuân thủ luật lệ giao thông để bảo vệ bản thân.
+                    </div>
+                </details>
+
+                <details class="ultra-card group overflow-hidden">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer font-bold text-fb-text dark:text-white text-lg hover:text-fb-primary dark:hover:text-fb-primary transition-colors focus:outline-none">
+                        <span class="flex items-center gap-3">Nếu làm mất mũ bảo hiểm hoặc làm xước xe thì đền bù thế nào?</span>
+                        <div class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:-rotate-180">
+                            <i class="ph-bold ph-caret-down"></i>
+                        </div>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0 text-fb-muted dark:text-gray-300 font-medium leading-relaxed border-t border-black/5 dark:border-white/5 mt-2 pt-4">
+                        Trong quá trình sử dụng dịch vụ <strong>cho thuê xe điện Hà Nội</strong> hoặc xe máy xăng, nếu phát sinh hư hỏng ngoại quan (vỡ vỏ nhựa, móp méo, gãy gương) hoặc mất đồ đạc đi kèm (mất mũ bảo hiểm giá trị 100k-150k/cái), khách hàng sẽ phải bồi thường theo đúng bảng giá linh kiện thực tế của đại lý sửa chữa ủy quyền. Chúng tôi cam kết tuyệt đối không "chặt chém" hay đẩy giá linh kiện đền bù lên cao.
+                    </div>
+                </details>
+            </div>
+            
+            <div class="mt-10 text-center">
+                <p class="text-fb-muted dark:text-gray-400 mb-6 font-medium">Bạn vẫn còn câu hỏi chưa được giải đáp?</p>
+                <a href="https://wa.me/84816659199" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#25D366] text-white font-bold text-lg hover:-translate-y-1 hover:shadow-lg hover:shadow-[#25D366]/30 transition-all duration-300">
+                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Chat qua WhatsApp
+                </a>
             </div>
         </section>
 
@@ -874,9 +933,10 @@
                     <div class="footer-content mt-1 md:mt-0">
                         <div>
                             <ul class="space-y-3 text-sm text-fb-muted dark:text-fb-darkMuted font-medium pt-2 pb-3 md:pt-0 md:pb-0">
-                                <li><a href="index.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Trang chủ</a></li>
+                                <li><a href="https://thuexedienhanoi.github.io/app/" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Trang chủ</a></li>
                                 <li><a href="gioithieu.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Giới thiệu</a></li>
-                                <li><a href="faq.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> FAQ (Hỏi đáp)</a></li>
+                                <li><a href="hoidap.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> FAQ (Hỏi đáp)</a></li>
+                                <li><a href="dieukhoan.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Điều khoản</a></li>
                                 <li><a href="chinhsach.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Chính sách</a></li>
                                 <li><a href="baomat.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Bảo mật</a></li>
                                 <li><a href="lienhe.html" class="hover:text-fb-primary transition-colors flex items-center gap-2"><i class="ph ph-caret-right text-xs"></i> Liên hệ</a></li>
@@ -942,7 +1002,7 @@
             <div class="border-t border-black/10 dark:border-white/10 mt-8 md:mt-12 pt-6 md:pt-8 text-center text-sm text-fb-muted dark:text-fb-darkMuted flex flex-col md:flex-row justify-between items-center gap-4">
                 <span>© 2026 Thuê Xe Máy Nguyễn Công. Đã đăng ký bản quyền.</span>
                 <div class="flex items-center gap-6 font-medium">
-                    <a href="chinhsach.html" class="hover:text-fb-primary transition-colors">Điều khoản dịch vụ</a>
+                    <a href="dieukhoan.html" class="hover:text-fb-primary transition-colors">Điều khoản dịch vụ</a>
                     <a href="baomat.html" class="hover:text-fb-primary transition-colors">Chính sách bảo mật</a>
                 </div>
             </div>
@@ -1035,7 +1095,7 @@
                     mobileDrawer.classList.remove('-translate-x-full');
                     mobileDrawer.classList.add('translate-x-0');
                     
-                    document.body.style.overflow = 'hidden'; 
+                    document.body.style.overflow = 'hidden'; // Ngăn cuộn trang phía sau
                 } else {
                     if (icon) icon.classList.replace('ph-x', 'ph-list');
                     mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
@@ -1049,7 +1109,17 @@
             }
 
             mobileMenuBtn.addEventListener('click', toggleDrawer);
-            mobileMenuOverlay.addEventListener('click', toggleDrawer); 
+            mobileMenuOverlay.addEventListener('click', toggleDrawer); // Click ra ngoài để đóng
+
+            // BỔ SUNG FIX LỖI: Tự động đóng Menu khi click vào bất kỳ link nào
+            const drawerLinks = mobileDrawer.querySelectorAll('a');
+            drawerLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (isDrawerOpen) {
+                        toggleDrawer(); // Đóng menu lại
+                    }
+                });
+            });
 
             // Dropdown trong Mobile Menu
             const mobileServicesToggleBtn = document.getElementById('mobileServicesToggleBtn');
@@ -1141,6 +1211,7 @@
             const footerToggles = document.querySelectorAll('.footer-toggle');
             footerToggles.forEach(toggle => {
                 toggle.addEventListener('click', () => {
+                    // Chỉ chạy logic Accordion trên màn hình Mobile (< 768px)
                     if (window.innerWidth >= 768) return; 
                     
                     const content = toggle.nextElementSibling;
